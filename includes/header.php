@@ -8,13 +8,18 @@ function kalypso_header($page){
         <div class="span2"> 
           <div id="vert_nav">
           <header>
-            <a href="index.html">
+          <?php if (theme_get_setting('branding_type') == 'logo'): ?>
+            <a href="<?php print base_path();?>"><img src="<?php print file_create_url(theme_get_setting('bg_path')); ?>" /></a>
+          <?php endif; ?>
+          
+          <?php if (theme_get_setting('branding_type') == 'text'): ?>
+            <a href="<?php print $front_page; ?>">
             <div id="main_title">
-              <h1 id="main_title_text">Kalypso</h1>
+              <h1 id="main_title_text"><?php print variable_get('site_name'); ?></h1>
             </div>
             </a>
+          <?php endif; ?>
             <!-- begin menu -->
-            <?php if (theme_get_setting('enable_menu') == '1'): ?>
             <div id="menu" class="row">
 	          	<div id="main-menu" class="navigation">
 		          	<div id="menu_wrap">
@@ -33,8 +38,7 @@ function kalypso_header($page){
 				        </div>
 				      </div> 
       
-				    </div> <!-- #menu -->
-				    <?php endif; ?>
+				    </div> 
             <!-- end menu -->       
           </header> 
           </div> 

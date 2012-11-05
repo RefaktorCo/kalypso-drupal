@@ -144,19 +144,6 @@ function kalypso_form_system_theme_settings_alter(&$form, &$form_state) {
         ), 
       );
 	
-	// Menu
-    $form['options']['header']['menu'] = array(
-      '#type' => 'fieldset',
-      '#title' => '<div class="plus"></div><h3 class="options_heading">Menu</h3>',
-    );
-    
-     // Slide Panel Toggle
-      $form['options']['header']['menu']['enable_menu'] = array(
-        '#type' => 'checkbox',
-        '#title' => 'Enable Menu',
-        '#default_value' => theme_get_setting('enable_menu'),
-      );
-        
     // Social Icons
     $form['options']['header']['social'] = array(
       '#type' => 'fieldset',

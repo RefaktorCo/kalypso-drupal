@@ -4,7 +4,6 @@ function kalypso_elastic_image_slider($page){
   global $root; 
   $slide_number = theme_get_setting('slides_number');
 ?>
-
 					<div class="row">
             <div class="span10">
               <div id="ei-slider" class="ei-slider">
