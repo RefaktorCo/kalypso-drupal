@@ -337,6 +337,18 @@ function kalypso_form_system_theme_settings_alter(&$form, &$form_state) {
         '#default_value' => theme_get_setting('enable_slider'),
       );
       
+      // Slider Type
+      $form['options']['front_page']['slider']['slider_type'] = array(
+        '#type' => 'select',
+        '#title' => 'Slider Type',
+        '#default_value' => theme_get_setting('slider_type'),
+        '#options' => array(
+          'default' => 'Elasic Image (default)',
+          'nivo' => 'Nivo Slider',
+          'bootstrap' => 'Twitter Bootstrap',
+        ),
+      );
+      
       // Enable Slider
       $form['options']['front_page']['slider']['slides_number'] = array(
         '#type' => 'select',

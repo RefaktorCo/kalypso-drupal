@@ -142,7 +142,21 @@ function kalypso_front_page($page){
           </div> 
           <?php } ?>
  
-          <?php if (theme_get_setting('enable_slider') == '1') { kalypso_bootstrap_slider(); } ?>
+          <?php 
+            
+            if (theme_get_setting('enable_slider') == '1' && theme_get_setting('slider_type') == 'default' ) {
+          	  kalypso_elastic_image_slider(); 
+          	} 
+          	
+          	if (theme_get_setting('enable_slider') == '1' && theme_get_setting('slider_type') == 'nivo' ) {
+          	  kalypso_nivo_slider(); 
+          	} 
+          	
+          	elseif (theme_get_setting('enable_slider') == '1' && theme_get_setting('slider_type') == 'bootstrap' ) {
+          	  kalypso_bootstrap_slider(); 
+          	} 
+          	
+          ?>
    
           <div class="row">
             <div class="span10">
