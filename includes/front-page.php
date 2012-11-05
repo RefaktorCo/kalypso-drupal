@@ -7,25 +7,22 @@ function kalypso_nivo_slider($page){
 					<div class="row">
             <div class="span10">
               <div class="slider-wrapper theme-default">
+                
                 <div id="slider" class="nivoSlider">
-
-	                <?php $i = '1'; while ($i <= $slide_number) { ?>
-	                
+	                <?php $i = '1'; while ($i <= $slide_number) { ?>  
 	                	<a href="<?php echo theme_get_setting('slide_url_'.$i.''); ?>">
-	                  	<img src="<?php print file_create_url(theme_get_setting('slide_path_'.$i.'')); ?>" alt="slider">
+	                  	<img src="<?php print file_create_url(theme_get_setting('slide_path_'.$i.'')); ?>" alt="slider" title="#htmlcaption<?php echo $i;?>">
 	                  </a>
-	                  
-	              
-	                <?php $i++; } ?>        
-               
-                <!-- ei-slider-large -->
+	                <?php $i++; } ?>              
                 </div>
-		            <div id="htmlcaption" class="nivo-html-caption">
-                  <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. 
+                
+                <?php $i = '1'; while ($i <= $slide_number) { ?> 
+		            <div id="htmlcaption<?php echo $i;?>" class="nivo-html-caption">
+                 <?php echo theme_get_setting('slide_caption_'.$i.''); ?>
                 </div>
-			          <!-- ei-slider-thumbs -->
+			          <?php $i++; } ?> 
+			          
 	            </div>
-	            <!-- ei-slider -->
             </div>
           </div>
           
