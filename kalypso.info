@@ -7,15 +7,15 @@ stylesheets[all][] = bootstrap/css/bootstrap.css
 stylesheets[all][] = bootstrap/css/bootstrap-responsive.css
 stylesheets[all][] = style.css
 stylesheets[all][] = /css/colors/default.css
-
-stylesheets[all][] = /css/superfish-vertical.css
 stylesheets[all][] = /css/sliders/elastic-image.css
+stylesheets[all][] = /css/sliders/nivo.css
 stylesheets[all][] = css/ie.css
 scripts[] = js/jquery.js
 scripts[] = bootstrap/js/bootstrap.js
 scripts[] = js/superfish.js
 scripts[] = js/hoverIntent.js
 scripts[] = js/jquery.eislideshow.js
+scripts[] = js/jquery.nivo.slider.js
 scripts[] = js/jquery.quote_rotator.js
 scripts[] = js/mobile-map.js
 scripts[] = js/mobile-menu.js

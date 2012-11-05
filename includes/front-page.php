@@ -1,5 +1,41 @@
 <?php 
 
+function kalypso_nivo_slider($page){
+  global $root; 
+  $slide_number = theme_get_setting('slides_number');
+?>
+					<div class="row">
+            <div class="span10">
+              <div class="slider-wrapper theme-default">
+                <div id="slider" class="nivoSlider">
+
+	                <?php $i = '1'; while ($i <= $slide_number) { ?>
+	                
+	                	<a href="<?php echo theme_get_setting('slide_url_'.$i.''); ?>">
+	                  	<img src="<?php print file_create_url(theme_get_setting('slide_path_'.$i.'')); ?>" alt="slider">
+	                  </a>
+	                  
+	              
+	                <?php $i++; } ?>        
+               
+                <!-- ei-slider-large -->
+                </div>
+		            <div id="htmlcaption" class="nivo-html-caption">
+                  <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. 
+                </div>
+			          <!-- ei-slider-thumbs -->
+	            </div>
+	            <!-- ei-slider -->
+            </div>
+          </div>
+          
+          <script type="text/javascript">
+	          jQuery(document).ready(function ($) {
+	          	$('#slider').nivoSlider();
+	          });
+	        </script>
+<?php }
+
 function kalypso_elastic_image_slider($page){
   global $root; 
   $slide_number = theme_get_setting('slides_number');
@@ -35,6 +71,17 @@ function kalypso_elastic_image_slider($page){
 	            <!-- ei-slider -->
             </div>
           </div>
+          
+          <script type="text/javascript">
+	          jQuery(document).ready(function ($) {
+	          	$('#ei-slider').eislideshow({
+								animation			: 'center',
+								autoplay			: true,
+								slideshow_interval	: 3000,
+								titlesFactor		: 0
+						  });
+	          });
+	        </script>
 <?php }
 
 function kalypso_front_page($page){
@@ -54,7 +101,7 @@ function kalypso_front_page($page){
           </div> 
           <?php } ?>
  
-          <?php if (theme_get_setting('enable_slider') == '1') { kalypso_elastic_image_slider(); } ?>
+          <?php if (theme_get_setting('enable_slider') == '1') { kalypso_nivo_slider(); } ?>
    
           <div class="row">
             <div class="span10">
