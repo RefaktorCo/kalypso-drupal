@@ -16,7 +16,7 @@ function kalypso_header($page){
             <!-- begin menu -->
             <?php if (theme_get_setting('enable_menu') == '1'): ?>
             <div id="menu" class="row">
-	          	<div class="menu-triangle-l"></div><div id="main-menu" class="navigation">
+	          	<div id="main-menu" class="navigation">
 		          	<div id="menu_wrap">
 				          <?php print theme('links__system_main_menu', array(
 				            'attributes' => array(
@@ -57,8 +57,7 @@ $('#ei-slider').eislideshow({
     
       $('ul#quotes').quote_rotator();
     
-      $('#menu').mobileMenu();
-      
+            
       $("#google_map").fitMaps( {w: '100%', h:'370px'} ); 
      
       jQuery("ul.accordion li").each(function(){
