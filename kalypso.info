@@ -70,10 +70,8 @@ settings[youtube_url] = 'http://youtube.com'
 settings[enable_panels] = '1'
 
 settings[enable_highlight] = '1'
-settings[highlight_title] = 'Use this to advertise something on your site'
-settings[highlight_text] = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-settings[highlight_button_text] = 'Click Me'
-settings[highlight_button_link] = ''
+settings[highlight_text] = 'This is <span class="standout_text">Kalypso</span> a modern HTML template.<br> Turn your website into something beautiful.'
+
 
 settings[color_scheme] = 'blue'
 

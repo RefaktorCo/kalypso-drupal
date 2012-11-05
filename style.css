@@ -1037,6 +1037,15 @@ span.accordion-head-image {
   z-index: 5000; 
   margin-left: -20px;
 }
+
+.mobile-menu {
+  display: none;
+  margin: auto;
+  width: 40%;
+  margin-bottom: 15px;
+}
+
+
 .navbar {min-height: 40px; background: #2171e9; color: #000; margin-bottom: 0px !important;}
 .navbar-inner {border-radius: 0px !important; -webkit-border-radius: 0px !important;} 
 #menu.row {margin-left: 0px !important; margin-top: -30px; margin-bottom: -1px;}

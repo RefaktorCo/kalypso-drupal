@@ -57,7 +57,8 @@ $('#ei-slider').eislideshow({
     
       $('ul#quotes').quote_rotator();
     
-            
+      $('#menu').mobileMenu();
+      
       $("#google_map").fitMaps( {w: '100%', h:'370px'} ); 
      
       jQuery("ul.accordion li").each(function(){

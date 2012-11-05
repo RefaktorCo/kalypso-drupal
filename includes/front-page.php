@@ -6,13 +6,16 @@ function kalypso_front_page($page){
 <!-- main span10 -->
         <div class="span10">
           
+          <?php if (theme_get_setting('enable_highlight') == '1') { ?>
           <div class="row">
             <div class="span10">
               <div id="page_heading">
-              <h2 class="page_heading_text">This is <span class="standout_text">Kalypso</span> a modern HTML template.<br> Turn your website into something beautiful.</h2>
+              <h2 class="page_heading_text"><?php echo theme_get_setting('highlight_text'); ?></h2>
               </div>
             </div>
-          </div>  
+          </div> 
+          <?php } ?>
+ 
           
           <div class="row">
             <div class="span10">

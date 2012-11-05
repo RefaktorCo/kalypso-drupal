@@ -437,18 +437,6 @@ function kalypso_form_system_theme_settings_alter(&$form, &$form_state) {
         '#default_value' => theme_get_setting('enable_highlight'),
       );
       
-      // highlight Title 
-      $form['options']['front_page']['highlight']['highlight_title'] = array(
-        '#type' => 'textfield',
-        '#title' => 'Highlight Title',
-        '#default_value' => theme_get_setting('highlight_title'),
-        '#states' => array (
-          'invisible' => array(
-            'input[name="enable_highlight"]' => array('checked' => FALSE)
-          )
-        )
-      );
-      
       // highlight Text
       $form['options']['front_page']['highlight']['highlight_text'] = array(
       	'#type' => 'textarea',
@@ -460,31 +448,7 @@ function kalypso_form_system_theme_settings_alter(&$form, &$form_state) {
           )
         )
       );
-      
-      // highlight Button Text
-      $form['options']['front_page']['highlight']['highlight_button_text'] = array(
-        '#type' => 'textfield',
-        '#title' => 'Highlight Button Text',
-        '#default_value' => theme_get_setting('highlight_button_text'),
-        '#states' => array (
-          'invisible' => array(
-            'input[name="enable_highlight"]' => array('checked' => FALSE)
-          )
-        )
-      );
-      
-      // highlight Button Link
-      $form['options']['front_page']['highlight']['highlight_button_link'] = array(
-      	'#type' => 'textfield',
-      	'#title' => 'Highlight Button Link',
-      	'#default_value' => theme_get_setting('highlight_button_link'),
-      	'#states' => array (
-          'invisible' => array(
-            'input[name="enable_highlight"]' => array('checked' => FALSE)
-          )
-        )
-      );
-  
+        
   // Layout
   $form['options']['layout'] = array(
     '#type' => 'fieldset',
