@@ -9,7 +9,9 @@ function kalypso_header($page){
           <div id="vert_nav">
           <header>
           <?php if (theme_get_setting('branding_type') == 'logo'): ?>
+          <div id="main_title">
             <a href="<?php print base_path();?>"><img src="<?php print file_create_url(theme_get_setting('bg_path')); ?>" /></a>
+          </div>
           <?php endif; ?>
           
           <?php if (theme_get_setting('branding_type') == 'text'): ?>
