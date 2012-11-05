@@ -143,74 +143,20 @@ function kalypso_form_system_theme_settings_alter(&$form, &$form_state) {
           'visible' => array('#edit-branding-type' => array('value' => 'background')),
         ), 
       );
-	  
-	  
-	  
-      
-    // Slide Panel
-    $form['options']['header']['slide_panel'] = array(
-      '#type' => 'fieldset',
-      '#title' => '<div class="plus"></div><h3 class="options_heading">Slide Panel</h3>',
-    );
-    
-      // Slide Panel Toggle
-      $form['options']['header']['slide_panel']['enable_panel'] = array(
-        '#type' => 'checkbox',
-        '#title' => t('Enable Slide Panel'),
-        '#default_value' => theme_get_setting('enable_panel'),
-      );
-  
-      // Slide Panel Text
-      $form['options']['header']['slide_panel']['panel_text'] = array(
-        '#type'  => 'textarea',
-        '#title' => t('Slide Panel Text'),
-        '#default_value' => theme_get_setting('panel_text'),
-        '#states' => array(
-          'invisible' => array(
-            'input[name="enable_panel"]' => array('checked' => FALSE)
-           )
-        )
-      );
-      
-    // Menu
+	
+	// Menu
     $form['options']['header']['menu'] = array(
       '#type' => 'fieldset',
       '#title' => '<div class="plus"></div><h3 class="options_heading">Menu</h3>',
     );
     
-    // Slide Panel Toggle
+     // Slide Panel Toggle
       $form['options']['header']['menu']['enable_menu'] = array(
         '#type' => 'checkbox',
         '#title' => 'Enable Menu',
         '#default_value' => theme_get_setting('enable_menu'),
       );
-      
-    // Contact Area
-    $form['options']['header']['contact'] = array(
-      '#type' => 'fieldset',
-      '#title' => '<div class="plus"></div><h3 class="options_heading">Contact Area</h3>',
-    );
-    
-      // Contact Area Toggle
-      $form['options']['header']['contact']['enable_contact'] = array(
-        '#type' => 'checkbox',
-        '#title' => 'Enable Contact Area',
-        '#default_value' => theme_get_setting('enable_contact'),
-      );
-  
-      // Slide Area Text
-      $form['options']['header']['contact']['contact_text'] = array(
-        '#type'  => 'textarea',
-        '#title' => 'Contact Area Text',
-        '#default_value' => theme_get_setting('contact_text'),
-        '#states' => array(
-          'invisible' => array(
-            'input[name="enable_contact"]' => array('checked' => FALSE)
-           )
-        )
-      );
-
-    
+        
     // Social Icons
     $form['options']['header']['social'] = array(
       '#type' => 'fieldset',
