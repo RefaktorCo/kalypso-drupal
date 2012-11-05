@@ -1,24 +1,11 @@
 <?php 
-function kalypso_front_page($page){
+
+function kalypso_elastic_image_slider($page){
   global $root; 
   $slide_number = theme_get_setting('slides_number');
 ?>
 
-<!-- main span10 -->
-        <div class="span10">
-          
-          <?php if (theme_get_setting('enable_highlight') == '1') { ?>
-          <div class="row">
-            <div class="span10">
-              <div id="page_heading">
-              <h2 class="page_heading_text"><?php echo theme_get_setting('highlight_text'); ?></h2>
-              </div>
-            </div>
-          </div> 
-          <?php } ?>
- 
-          <?php if (theme_get_setting('enable_slider') == '1'): ?>
-          <div class="row">
+					<div class="row">
             <div class="span10">
               <div id="ei-slider" class="ei-slider">
               
@@ -49,7 +36,26 @@ function kalypso_front_page($page){
 	            <!-- ei-slider -->
             </div>
           </div>
-          <?php endif; ?>
+<?php }
+
+function kalypso_front_page($page){
+  global $root; 
+?>
+
+<!-- main span10 -->
+        <div class="span10">
+          
+          <?php if (theme_get_setting('enable_highlight') == '1') { ?>
+          <div class="row">
+            <div class="span10">
+              <div id="page_heading">
+              <h2 class="page_heading_text"><?php echo theme_get_setting('highlight_text'); ?></h2>
+              </div>
+            </div>
+          </div> 
+          <?php } ?>
+ 
+          <?php if (theme_get_setting('enable_slider') == '1') { kalypso_elastic_image_slider(); } ?>
    
           <div class="row">
             <div class="span10">
