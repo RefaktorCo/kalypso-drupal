@@ -1,0 +1,64 @@
+/* Body and Content */
+a {
+  color: #dae500;
+}
+
+a:hover {
+  color: #edf907;
+  text-decoration: none;
+}
+
+#main_title {
+  background: #dae500; 
+}
+
+.standout_text {
+  background-color: #dae500; 
+}
+
+/* Panel */
+.panel_icon {
+  background: #dae500; 	
+}
+
+/*Menu*/
+a.fNiv.active, #jMenu li a:hover {
+  color: #dae500 !important;
+}
+
+#jMenu li ul {
+  border-top: 2px solid #dae500;
+}
+
+#jMenu li ul li a:hover {
+  color: #dae500;
+}
+
+/*Portfolio*/
+.view-first .mask {
+  background-color: rgba(218, 229, 0, 0.7);
+}
+
+/* Pricing Table */
+.pricehover:hover .price {
+  background:#dae500; 
+}
+
+.pricehover:hover .price {
+  border-color: #dae500;
+}
+
+/* Widgets */
+.popular_tags a:hover, .ad_block a:hover, .tabs a.active {
+  background: #dae500;
+}
+
+/*Highlight*/
+#highlight {
+  background: #dae500; 
+}
+
+/*Elastic Slider*/
+.ei-slider-thumbs li a {
+  background: #dae500 ;
+}
