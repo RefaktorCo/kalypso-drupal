@@ -1045,15 +1045,16 @@ span.accordion-head-image {
 #main-menu li {list-style: none; }
 #main-menu li a.active {color: #08c;}
 #main-menu li:hover {background-color: whitesmoke;}
-#main-menu li a:hover {color: #08c;}
+#main-menu li a:hover, #main-menu .menu ul li a:hover  {color: #08c;}
 #main-menu li li a.active {color: #ccc;}
 #main-menu .menu li {position: relative; padding:15px 15px 15px 0px;}
 #main-menu li a {color: #333;  padding:15px 15px 15px 15px; font-family: 'Raleway', sans-serif; font-size: 18px; text-transform: uppercase; font-weight: 400;}
 #main-menu .menu li.first {margin-left: 0px; border-left: none;}
-#main-menu .menu ul li {padding: 0px; margin: 0; clear: both; border-left: none;}
+#main-menu .menu ul li {padding: 7px; margin: 0; clear: both; border-left: none;  border-bottom:1px solid #ECECEC;}
 #main-menu .menu ul li a {
   font-size: 13px; 
   text-transform: none;
+  color: #333;
 }
 ul.menu li {
 	margin: 0px;
@@ -1061,7 +1062,7 @@ ul.menu li {
 .menu ul {background-color: whitesmoke !important; border-top: 2px solid #08c;}
 .menu ul li a {color: #fff;}
 ul.menu {margin: 0;}
-.menu ul {padding: 0; position: absolute; top: 0px; left: 135px; z-index: 1000; display: none;}
+.menu ul {padding: 0; position: absolute; top: 0px; left: 135px; z-index: 1000; display: none; width: 170px;}
 /* indicate menu has children with right arrow bg image */
 .menu li.expanded {}
 /* make sure children of expanded menus don't inherit indicator */
@@ -1076,7 +1077,7 @@ ul.menu {margin: 0;}
 .menu .sfHover ul li a {}
 /* active submenu link */
 .menu li.active-trail ul li a.active {color: #000;}
-.menu ul ul {z-index: 1001; margin: 0; left: 15.15em; top: -45px;}
+.menu ul ul {z-index: 1001; margin: 0; left: 14.15em; top: 0px; border-top: 2px solid #08C;}
 			
 /*Responsive Styles*/
 
