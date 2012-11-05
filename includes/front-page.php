@@ -1,6 +1,9 @@
 <?php 
 function kalypso_front_page($page){
   global $root; 
+  $slide_number = theme_get_setting('slides_number');
+	$i = '1';
+	$j = '1';
 ?>
 
 <!-- main span10 -->
@@ -16,58 +19,36 @@ function kalypso_front_page($page){
           </div> 
           <?php } ?>
  
-          
+          <?php if (theme_get_setting('enable_slider') == '1'): ?>
           <div class="row">
             <div class="span10">
               <div id="ei-slider" class="ei-slider">
                 <ul class="ei-slider-large">
-	         
+	              <?php while ($i <= $slide_number) { ?>
 	              <li>
-	                <img src="<?php echo $root;?>/images/slider_1.jpg" alt="slider" />
+	                <img src="<?php print file_create_url(theme_get_setting('slide_path_'.$i.'')); ?>" alt="slider">
 	                <div class="ei-title">
 	                  <h2>Think</h2>
 	                  <h3>Global</h3>
 	                </div>
 	              </li>
-	          
-		           <li>
-	                <a href="#"><img src="<?php echo $root;?>/images/slider_2.jpg" alt="slider"/></a>
-	                <div class="ei-title">
-	                  <h2>Creative</h2>
-	                  <h3>Control</h3>
-	                </div>
-	              </li>
-	              
-	              <li> 
-	                <img src="<?php echo $root;?>/images/slider_3.jpg" alt="slider" />
-	                <div class="ei-title">
-	                  <h2>CLean</h2>
-	                  <h3>Design</h3>
-	                </div>
-	              </li>
-	              
-		          <li>
-		            <img src="<?php echo $root;?>/images/slider_4.jpg" alt="slider" />
-		            <div class="ei-title">
-		              <h2>SEO</h2>
-		              <h3>Friendly</h3>
-		            </div>
-		          </li> 
-		          
+	              <?php $i++; } ?>
+		           		          
                 </ul>
 	            <!-- ei-slider-large -->
 	            <ul class="ei-slider-thumbs">
-	              <li class="ei-slider-element">Current</li>
-		          <li><a href="#">Slide 1</a><img src="<?php echo $root;?>/images/thumbs/thumb_1.jpg" alt="thumb01" /></li>
-		          <li><a href="#">Slide 2</a><img src="<?php echo $root;?>/images/thumbs/thumb_2.jpg" alt="thumb02" /></li>
-		          <li><a href="#">Slide 3</a><img src="<?php echo $root;?>/images/thumbs/thumb_3.jpg" alt="thumb03" /></li>
-		          <li><a href="#">Slide 4</a><img src="<?php echo $root;?>/images/thumbs/thumb_4.jpg" alt="thumb04" /></li>
+	            <li class="ei-slider-element">Current</li>
+	              <?php while ($j <= $slide_number) { ?>
+	              
+			          <li><a href="#">Slide <?php echo $i; ?></a><img src="<?php print file_create_url(theme_get_setting('slide_path_'.$j.'')); ?>" alt="thumb" height="60" width="150" /></li>
+			          <?php $j++; } ?>
 		        </ul>
 		        <!-- ei-slider-thumbs -->
 	          </div>
 	          <!-- ei-slider -->
             </div>
           </div>
+          <?php endif; ?>
    
           <div class="row">
             <div class="span10">
