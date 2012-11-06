@@ -15,7 +15,7 @@ function kalypso_header($page){
           <?php endif; ?>
           
           <?php if (theme_get_setting('branding_type') == 'text'): ?>
-            <a href="<?php print $front_page; ?>">
+            <a href="<?php print base_path();?>">
             <div id="main_title">
               <h1 id="main_title_text"><?php print variable_get('site_name'); ?></h1>
             </div>

@@ -230,7 +230,7 @@ function kalypso_front_page($page){
                 <button class="btn btn-large" type="button">Our Portfolio</button> 
               </div>              
        
-              <div class="span5 view view-first">
+              <div class="span5 portfolio-item portfolio-item-first">
                 <a href="portfolio-single.html"><img src="<?php echo $root;?>/images/portfolio_2.jpg" alt="portfolio2"></a>
                 <div class="mask">
                   <h2>Eiusmod Tempor</h2>
@@ -242,7 +242,7 @@ function kalypso_front_page($page){
         
             <div class="row">
 
-              <div class="span3 view view-first">
+              <div class="span3 portfolio-item portfolio-item-first">
                 <a href="portfolio-single.html"><img src="<?php echo $root;?>/images/portfolio_1.jpg" alt="portfolio1"></a>
                 <div class="mask">
                   <h2>Lorem Ipsum</h2>
@@ -251,7 +251,7 @@ function kalypso_front_page($page){
                 </div>
               </div>  
           
-              <div class="span3 view view-first">
+              <div class="span3 portfolio-item portfolio-item-first">
                 <a href="portfolio-single.html"><img src="<?php echo $root;?>/images/portfolio_4.jpg" alt="portfolio2"></a>
                 <div class="mask">
                   <h2>Eiusmod Tempor</h2>
@@ -260,7 +260,7 @@ function kalypso_front_page($page){
                 </div>
               </div>  
           
-              <div class="span3 view view-first">
+              <div class="span3 portfolio-item portfolio-item-first">
                 <a href="portfolio-single.html"><img src="<?php echo $root;?>/images/portfolio_3.jpg" alt="portfolio3"></a>
                 <div class="mask">
                   <h2>Ullamco Laboris</h2>

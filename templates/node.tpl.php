@@ -1,3 +1,8 @@
+<?php 
+global $root, $base_url;
+$share_url = $base_url.'/node/'.$node->nid;
+?>
+
 <?php if (!$page): ?>
   <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 <?php endif; ?>
@@ -5,7 +10,7 @@
   <?php if ($user_picture || $display_submitted || !$page): ?>
     <?php print render($title_prefix); ?>
     <?php if (!$page): ?>
-      <h2 class="node_title" <?php print $title_attributes; ?>><div class="node_title_wrap"><a href="<?php print $node_url; ?>"><?php print $title; ?></a></div></h2><div class="triangle"></div>
+      <h3 class="post_title" <?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h3>
     <?php endif; ?>
     <?php print render($title_suffix); ?>
   
@@ -13,7 +18,9 @@
       <ul class="meta">
         <li><i class="icon-user"></i> by <?php print $name; ?></li>
         <li><i class="icon-calendar"></i> <?php print format_date($node->created, 'custom', 'M d, Y'); ?></li>
+        
         <li><i class="icon-comment"></i> <a href="<?php print $node_url;?>/#comments"><?php print $comment_count; ?> comments</a></li>
+        
      </ul>
     <?php endif; ?>
     <div class="post_image"><?php print render($content['field_image']); ?></div>
@@ -31,16 +38,23 @@
     ?>
   </div>
   
-    <?php if ($field_tags):?>
-      <div class="tags"><i class="icon-tags"></i><?php print render($content['field_tags']); ?></div>
-    <?php endif; ?>
-    
-    <div class="read_more">
-    <?php if($teaser): ?>
-      <button class="btn" type="button"> <?php print l(t('Read more'), '../' . $node_url, array('attributes' => array('class' => t('newreadmore')))); ?> </button>
-    <?php endif;?>
+  <div class="post_share_wrap">
+    <ul class="post_share">
+      <li><a href="http://twitter.com/home?status=<?php print $share_url; ?>"><img src="<?php echo $root;?>/images/blog/twitter.png" alt="twitter"></a></li>
+      <li><a href="http://www.facebook.com/sharer.php?u={URL}"><img src="<?php echo $root;?>/images/blog/fb.png" alt="fb"></a></li>
+      <li><a href="http://www.stumbleupon.com/submit?url={URL}&amp;title={TITLE}"><img src="<?php echo $root;?>/images/blog/stumble.png" alt="stumble"></a></li>
+      <li><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url={articleUrl}&amp;title={articleTitle}&amp;summary={articleSummary}&amp;source={articleSource}"><img src="<?php echo $root;?>/images/blog/linkedin.png" alt="linkedin"></a></li>
+      <li><a href="http://reddit.com/submit?url={URL}"><img src="<?php echo $root;?>/images/blog/reddit.png" alt="reddit"></a></li>
+      <li><a href="mailto:user@domain.com?subject=Check%20out%20this%20great%20post&amp;body=URL%20GOES%20HERE"><img src="<?php echo $root;?>/images/blog/email.png" alt="email"></a></li>
+    </ul>  
+  </div>
 
-    </div>
+  <div style="text-align: right"> 
+  	<?php if($teaser): ?>
+  	<?php print l(t('Read more'), '../' . $node_url, array('attributes' => array('class' => t('newreadmore')))); ?> 
+    <?php endif;?>
+  </div>
+
   <div class="clearfix"></div>
 
   <?php print render($content['comments']); ?>

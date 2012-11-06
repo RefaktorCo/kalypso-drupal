@@ -1,3 +1,28 @@
+/*Node*/
+.title {padding-top: 4px;}
+.post_image img {border: 4px solid #d9d9d9;}
+.icon-calendar, .icon-user, .icon-comment {margin-top: 2px;}
+.node_title_wrap {padding-left: 37px; padding-right: 0px;}
+.node_title {}
+.meta {margin: 0px 0px 5px 0px;}
+.meta li {list-style: none; display: inline; margin-right: 10px;}
+.field-type-taxonomy-term-reference .field-label, .field-type-taxonomy-term-reference .field-items, .field-type-taxonomy-term-reference .field-item {display:inline; float:left; font-weight:normal; padding-right:5px; margin-bottom: 10px;}
+.icon-tags {margin-right: 5px; margin-top: 1px;}
+.field-type-taxonomy-term-reference .field-label {display: none;}
+.triangle {border-style:solid; border-width:17px; height:0px; width:0px; position: relative; left: -54px; top: -17px; z-index: -1; /* displayed under bubble */ margin-bottom: -24px;}
+.read_more {float: right; margin-top: -5px;}
+.read_more a:hover {text-decoration: none; color: #08C;}
+.node-article {margin-bottom: 15px;}
+
+/*Comments*/
+.comment_bubble {float: right;}
+.comment {margin-bottom: 15px;}
+.comments_title {text-align: left;}
+.comment_avatar {float: left; margin-right: 30px; margin-bottom: 15px;}
+ul.links.inline  {margin: 0px;}
+.user-picture {width: 80px;}
+.comment_content {background-color: #F6F6F6; border: 1px solid #DDD;  margin-left: 100px; padding: 10px; border-radius: 4px;}
+
 /* Body and Content */
 body {
   font-family: 'Open Sans', sans-serif;
@@ -877,7 +902,7 @@ span.accordion-head-image {
   padding-top: 15%;
 }
 
-.view {
+.portfolio-item {
   float: left;
   overflow: hidden;
   position: relative;
@@ -889,7 +914,7 @@ span.accordion-head-image {
   margin-bottom: 20px;
 }
 
-.view .mask,.view .content {
+.portfolio-item .mask,.portfolio-item .content {
   height: 100%;
   position: absolute;
   overflow: hidden;
@@ -897,12 +922,12 @@ span.accordion-head-image {
   left: 0;
 }
 
-.view img {
+.portfolio-item img {
   display: block;
   position: relative;
 }
 
-.view h2 {
+.portfolio-item h2 {
   text-transform: uppercase;
   color: #fff;
   text-align: center;
@@ -913,7 +938,7 @@ span.accordion-head-image {
   margin: 20px 0 0 0;
 }
 
-.view p {
+.portfolio-item p {
   font-family: Georgia, serif;
   font-style: italic;
   font-size: 12px;
@@ -923,7 +948,7 @@ span.accordion-head-image {
   text-align: center;
 }
 
-.view a.info {
+.portfolio-item a.info {
   display: inline-block;
   text-decoration: none;
   padding: 7px 14px;
@@ -936,13 +961,13 @@ span.accordion-head-image {
   margin-top: 10px;
 }
 
-.view a.info: hover {
+.portfolio-item a.info: hover {
   -webkit-box-shadow: 0 0 5px #000;
   -moz-box-shadow: 0 0 5px #000;
   box-shadow: 0 0 5px #000;
 }
 
-.view-first img {
+.portfolio-item-first img {
   -webkit-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
@@ -950,7 +975,7 @@ span.accordion-head-image {
   transition: all 0.2s linear;
 }
 
-.view-first .mask {
+.portfolio-item-first .mask {
   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
   opacity: 0;
@@ -962,7 +987,7 @@ span.accordion-head-image {
   width: 100%; 
 }
 
-.view-first h2 {
+.portfolio-item-first h2 {
   -webkit-transform: translateY(-100px);
   -moz-transform: translateY(-100px);
   -o-transform: translateY(-100px);
@@ -978,7 +1003,7 @@ span.accordion-head-image {
   transition: all 0.2s ease-in-out;
 }
 
-.view-first p {
+.portfolio-item-first p {
   -webkit-transform: translateY(100px);
   -moz-transform: translateY(100px);
   -o-transform: translateY(100px);
@@ -994,10 +1019,10 @@ span.accordion-head-image {
   transition: all 0.2s linear;
 }
 
-.view-first:hover img {
+.portfolio-item-first:hover img {
  
 }
-.view-first a.info {
+.portfolio-item-first a.info {
   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
   opacity: 0;
@@ -1008,13 +1033,13 @@ span.accordion-head-image {
   transition: all 0.2s ease-in-out;
   margin-left: 5px;
 }
-.view-first:hover .mask {
+.portfolio-item-first:hover .mask {
   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
   filter: alpha(opacity=100);
   opacity: 1;
 }
 
-.view-first:hover h2, .view-first:hover p, .view-first:hover a.info {
+.portfolio-item-first:hover h2, .portfolio-item-first:hover p, .portfolio-item-first:hover a.info {
   -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
   filter: alpha(opacity=100);
   opacity: 1;
@@ -1025,7 +1050,7 @@ span.accordion-head-image {
   transform: translateY(0px);
 }
 
-.view-first:hover p {
+.portfolio-item-first:hover p {
   -webkit-transition-delay: 0.1s;
   -moz-transition-delay: 0.1s;
   -o-transition-delay: 0.1s;
@@ -1033,7 +1058,7 @@ span.accordion-head-image {
   transition-delay: 0.1s;
 }
 
-.view-first:hover a.info {
+.portfolio-item-first:hover a.info {
   -webkit-transition-delay: 0.2s;
   -moz-transition-delay: 0.2s;
   -o-transition-delay: 0.2s;
