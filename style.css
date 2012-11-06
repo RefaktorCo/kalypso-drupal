@@ -1,3 +1,14 @@
+/*Portfolio Node*/
+
+.portfolio_image {
+	margin-top: 20px;
+}
+
+.portfolio_image .field-label {
+	display: none;
+}
+
+
 
 .view-popular-tags .item-list ul {
   margin: -5px 0px 20px 0px;
@@ -1145,9 +1156,11 @@ span.accordion-head-image {
 
 #vert_nav {
   position: fixed; 
-  z-index: 5000; 
+  z-index: 2000; 
   margin-left: -20px;
 }
+
+html.overlay-open #vert_nav  {z-index: 0;}
 
 .mobile-menu {
   display: none;
