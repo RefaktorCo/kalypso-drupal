@@ -37,6 +37,10 @@ $share_url = $base_url.'/node/'.$node->nid;
     ?>
   </div>
   
+  <?php if ($field_tags):?>
+      <div class="tags"><i class="icon-tags"></i><?php print render($content['field_tags']); ?></div>
+    <?php endif; ?>
+  
   <div class="post_share_wrap">
     <ul class="post_share">
       <li><a href="http://twitter.com/home?status=<?php print $share_url; ?>"><img src="<?php echo $root;?>/images/blog/twitter.png" alt="twitter"></a></li>

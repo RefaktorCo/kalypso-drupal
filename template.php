@@ -37,13 +37,24 @@ function kalypso_field($variables) {
   // Render the items.
   $output .= '<div class="field-items"' . $variables['content_attributes'] . '>';
  
+  
   if ($variables['element']['#field_name'] == 'field_tags') {
     // For tags, concatenate into a single, comma-delimitated string.
     foreach ($variables['items'] as $delta => $item) {
       $rendered_tags[] = drupal_render($item);
     }
     $output .= implode(', ', $rendered_tags);
-  } else {
+  }
+  
+  elseif ($variables['element']['#field_name'] == 'field_portfolio_tags') {
+    // For tags, concatenate into a single, comma-delimitated string.
+    foreach ($variables['items'] as $delta => $item) {
+      $rendered_tags[] = drupal_render($item);
+    }
+    $output .= implode(', ', $rendered_tags);
+  }
+   
+  else {
     // Default rendering taken from theme_field().
     foreach ($variables['items'] as $delta => $item) {
       $classes = 'field-item ' . ($delta % 2 ? 'odd' : 'even');
@@ -57,6 +68,7 @@ function kalypso_field($variables) {
  
   return $output;
 }
+
 
 /* Put Breadcrumbs in a ul li structure and add descending z-index style to each <a href> tag */
 function kalypso_breadcrumb($variables, $page) {

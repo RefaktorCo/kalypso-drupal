@@ -15,8 +15,9 @@ kalypso_header($page);
           </div> 
           
           <div class="row">
-            <div id ="main_content_wrap" class="<?php if (theme_get_setting('page_layout') == 'sidebar_right') { echo "span10"; } else { echo "span10"; } ?>">
-              <div id="main_content">
+            <div id ="portfolio_content_wrap" class="span10">
+              <div class="row">
+              <div id="portfolio_main_content">
 	              <?php print render($title_prefix); ?>
 	              <?php print render($title_suffix); ?>
 	              <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
@@ -24,6 +25,7 @@ kalypso_header($page);
 	            </div>
 	          </div>
         		      </div>
+          </div>
         </div>    
       </div>
     </div>  

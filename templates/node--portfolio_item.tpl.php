@@ -26,7 +26,7 @@ $share_url = $base_url.'/node/'.$node->nid;
       hide($content['taxonomy_forums']);
       hide($content['comments']);
       hide($content['links']);
-      hide($content['field_tags']);
+      
       hide($content['field_portfolio_image']);
       print render($content);
     ?>

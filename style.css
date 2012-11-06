@@ -1,3 +1,33 @@
+/*Portfolio view*/
+
+#portfolio_content_wrap {
+
+	margin-bottom: 20px;
+}
+
+.field-name-field-portfolio-tags .field-type-taxonomy-term-reference .field-label, .field-type-taxonomy-term-reference .field-items, .field-type-taxonomy-term-reference .field-item{
+	float:none !important;
+}
+
+
+#portfolio_content_wrap .span5 .mask {
+  padding-top: 10%;	
+}
+
+.view_portfolio_image .field-label {
+	display: none;
+}
+
+.portfolio_tags {
+	clear:both;
+	text-align: center;
+	color: #fff;
+}
+
+.portfolio_tags a {
+	color: #FFF;
+}
+
 /*Portfolio Node*/
 
 .portfolio_image {
@@ -483,6 +513,13 @@ header{
 .icon-tags {
   margin-right: 4px;
 }
+
+.tags .icon-tags {
+  margin-right: 4px;
+  margin-top: 2px;
+  float: left;
+}
+
 
 #blog_content .carousel {
   margin-bottom: 0px;
