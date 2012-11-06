@@ -5,7 +5,7 @@ $count = '1';
 ?>
 
 
-  <div class="span5 portfolio-item portfolio-item-first">
+  <div class="span3 portfolio-item portfolio-item-first">
     <div class="view_portfolio_image"><a href="<?php print $node_url; ?>"><?php print render($content['field_portfolio_image']); ?></a></div>
     <div class="mask">
       <h2><?php print $title; ?> - Counter: <?php print $count; ?></h2>
