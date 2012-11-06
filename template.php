@@ -51,7 +51,7 @@ function kalypso_field($variables) {
 }
 
 /* Put Breadcrumbs in a ul li structure and add descending z-index style to each <a href> tag */
-function kalypso_breadcrumb($variables) {
+function kalypso_breadcrumb($variables, $page) {
   $count = '100';
   $breadcrumb = $variables['breadcrumb'];
 
@@ -63,7 +63,7 @@ function kalypso_breadcrumb($variables) {
       $pos = strpos( $value, ">"); 
       $temp1=substr($value,0,$pos);
       $temp2=substr($value,$pos,$pos);
-      $crumbs .= '<li>'.$value.'</li>';
+      $crumbs .= '<li>'.$value.'&#8592;</li>';
     }
     $crumbs .= '</ul></div>';
   }

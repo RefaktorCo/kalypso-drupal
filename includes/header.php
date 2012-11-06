@@ -3,7 +3,7 @@ function kalypso_header($page){
   global $root; 
 ?>
 
- <div class="container">
+    <div class="container">
       <div class="row">  
         <div class="span2"> 
           <div id="vert_nav">
