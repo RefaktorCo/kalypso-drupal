@@ -6,6 +6,14 @@ $root = base_path() . path_to_theme();
 
 include_once(drupal_get_path('theme', 'kalypso').'/includes/init.php');
 
+
+function kalypso_preprocess_page(&$vars, $hook) {
+    if (isset($vars['node'])) {
+        $suggest = "page__node__{$vars['node']->type}";
+        $vars['theme_hook_suggestions'][] = $suggest;
+    }
+}
+
 /* Allow sub-menu items to be displayed */
 function kalypso_links($variables) {
   if (array_key_exists('id', $variables['attributes']) && $variables['attributes']['id'] == 'main-menu-links') {

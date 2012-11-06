@@ -48,6 +48,10 @@ article hr {
   margin-bottom: -5px;	
 }
 
+.article_content {
+	margin-top: 10px;
+}
+
 /*Comments*/
 .comment {margin-bottom: 15px;}
 .comments_title {text-align: left; margin-bottom: 12px;}
