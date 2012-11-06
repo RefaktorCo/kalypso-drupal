@@ -28,7 +28,7 @@ ul.links.inline  {margin: 0px;}
 margin-left: 80px;
 }
 
-#comment-form-wrapper .form-actions {
+#comment-form-wrapper .form-actions, #sidebar_wrap .form-actions {
   background-color: transparent;
   border-top: none;
   padding: 0px;
@@ -36,6 +36,24 @@ margin-left: 80px;
 
 #edit-submit {
   margin-right: 10px;
+}
+
+#sidebar_wrap h2 {
+  font-size: 26px;	
+  margin-bottom: 0px;
+}
+
+#search-block-form input[type="text"] {
+	padding-right: 14px;
+	padding-right: 4px 9;
+	padding-left: 14px;
+	padding-left: 4px 9;
+	margin-bottom: 0;
+	margin-right: 10px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	width: 150px;
 }
 
 /* Body and Content */
@@ -572,7 +590,7 @@ header{
 
 /* Sidebar */
 #sidebar_wrap {
-  padding: 18px 0px 0px 20px;
+  padding: 18px 0px 0px 18px;
 }
 
 #sidebar_wrap h3 {
