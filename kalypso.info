@@ -68,6 +68,7 @@ settings[flickr_url] = 'http://flickr.com'
 settings[youtube_url] = 'http://youtube.com'
 
 settings[enable_panels] = '1'
+settings[panels_title] = 'WHAT WE DO'
 
 settings[enable_highlight] = '1'
 settings[highlight_text] = 'This is <span class="standout_text">Kalypso</span> a modern HTML template.<br> Turn your website into something beautiful.'

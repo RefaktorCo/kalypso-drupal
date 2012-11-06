@@ -420,6 +420,13 @@ function kalypso_form_system_theme_settings_alter(&$form, &$form_state) {
         '#default_value' => theme_get_setting('enable_panels'),
       );
       
+      //Panel Title
+      $form['options']['front_page']['panels']['panels_title'] =array(
+        '#type' => 'textfield',
+        '#title' => 'Panels Title',
+        '#default_value' => theme_get_setting('panels_title'),
+      );
+      
     // highlight
     $form['options']['front_page']['highlight'] = array(
       '#type' => 'fieldset', 

@@ -160,7 +160,7 @@ function kalypso_front_page($page){
    
           <div class="row">
             <div class="span10">
-              <div class="section_title"><span class="section_title_text">WHAT WE DO</span></div>
+              <div class="section_title"><span class="section_title_text"><?php echo theme_get_setting('panels_title'); ?></span></div>
             </div> 
           </div>
         
