@@ -1,6 +1,7 @@
 
 .view-popular-tags .item-list ul {
-  margin: 0px;
+  margin: -5px 0px 20px 0px;
+
 }
 
 .view-popular-tags .item-list ul li {
@@ -15,6 +16,15 @@
   text-decoration: none; 
   padding:7px 10px; 
   background-color: #333; 
+  margin: -5px 8px 12px 0px;
+  display: inline-block; 
+}
+
+.view-popular-tags a:hover {
+	color: #fff; 
+  text-decoration: none; 
+  padding:7px 10px; 
+  background-color: #08c; 
   margin: 0px 8px 5px 0px;
   display: inline-block; 
 }
@@ -472,7 +482,7 @@ header{
 }
 
 .content {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   }
 
 .content p {

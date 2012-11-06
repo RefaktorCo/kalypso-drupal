@@ -9,9 +9,9 @@ $share_url = $base_url.'/node/'.$node->nid;
 
   <?php if ($user_picture || $display_submitted || !$page): ?>
     <?php print render($title_prefix); ?>
-    <?php if (!$page): ?>
+
       <h3 class="post_title" <?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h3>
-    <?php endif; ?>
+
     <?php print render($title_suffix); ?>
   
     <?php if ($display_submitted): ?>
