@@ -41,11 +41,11 @@ $share_url = $base_url.'/node/'.$node->nid;
   <div class="post_share_wrap">
     <ul class="post_share">
       <li><a href="http://twitter.com/home?status=<?php print $share_url; ?>"><img src="<?php echo $root;?>/images/blog/twitter.png" alt="twitter"></a></li>
-      <li><a href="http://www.facebook.com/sharer.php?u={URL}"><img src="<?php echo $root;?>/images/blog/fb.png" alt="fb"></a></li>
-      <li><a href="http://www.stumbleupon.com/submit?url={URL}&amp;title={TITLE}"><img src="<?php echo $root;?>/images/blog/stumble.png" alt="stumble"></a></li>
-      <li><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url={articleUrl}&amp;title={articleTitle}&amp;summary={articleSummary}&amp;source={articleSource}"><img src="<?php echo $root;?>/images/blog/linkedin.png" alt="linkedin"></a></li>
-      <li><a href="http://reddit.com/submit?url={URL}"><img src="<?php echo $root;?>/images/blog/reddit.png" alt="reddit"></a></li>
-      <li><a href="mailto:user@domain.com?subject=Check%20out%20this%20great%20post&amp;body=URL%20GOES%20HERE"><img src="<?php echo $root;?>/images/blog/email.png" alt="email"></a></li>
+      <li><a href="http://www.facebook.com/sharer.php?u=<?php print $share_url; ?>"><img src="<?php echo $root;?>/images/blog/fb.png" alt="fb"></a></li>
+      <li><a href="http://www.stumbleupon.com/submit?url=<?php print $share_url; ?>&amp;title=<?php print $title; ?>"><img src="<?php echo $root;?>/images/blog/stumble.png" alt="stumble"></a></li>
+      <li><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=<?php print $share_url; ?>&amp;title=<?php print $title; ?>&amp;summary={articleSummary}&amp;source=<?php print $base_url; ?>"><img src="<?php echo $root;?>/images/blog/linkedin.png" alt="linkedin"></a></li>
+      <li><a href="http://reddit.com/submit?url=<?php print $share_url; ?>"><img src="<?php echo $root;?>/images/blog/reddit.png" alt="reddit"></a></li>
+      <li><a href="mailto:user@domain.com?subject=Check%20out%20this%20great%20post&amp;body=<?php print $share_url; ?>"><img src="<?php echo $root;?>/images/blog/email.png" alt="email"></a></li>
     </ul>  
   </div>
 
