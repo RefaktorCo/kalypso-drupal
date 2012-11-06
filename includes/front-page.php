@@ -168,38 +168,53 @@ function kalypso_front_page($page){
             <div id="panels"> 
               
               <div class="span3">
-	            <div class="panel_wrap">
-	              <a href="#"><div class="panel_icon"><img src="<?php echo $root;?>/images/monitor.png" alt="color"></div></a>
-	              <h3 class="panel_title">Design & Branding</h3>
-	              <div class="panel_text">
-	                <p>Engage your audience. Define your identity.</p>
-	              </div>  
+	            	<div class="panel_wrap">
+	              	<?php if(!$page['panel_1']) {?>
+	              	<a href="#"><div class="panel_icon"><img src="<?php echo $root;?>/images/monitor.png" alt="color"></div></a>
+	              	<h3 class="panel_title">Design & Branding</h3>
+	              	<div class="panel_text">
+	               	  <p>Engage your audience. Define your identity.</p>
+	               	</div> 
+	               	<?php } else { print render($page['panel_1']); }?> 
+	              </div>
 	            </div>
-	          </div>
 	      
 	          <div class="span3">
-		        <div class="panel_wrap">
-		          <a href="#"><div class="panel_icon"><img src="<?php echo $root;?>/images/phone.png" alt="color"></div></a>
-		          <h3 class="panel_title">Global Solutions</h3>
-		          <div class="panel_text">
-		            <p>Know no boundires. Expand your horizons.</p>	             
-		          </div>  
+		          <div class="panel_wrap">
+		          	<?php if(!$page['panel_2']) {?>
+		          	<a href="#"><div class="panel_icon"><img src="<?php echo $root;?>/images/phone.png" alt="color"></div></a>
+		          	<h3 class="panel_title">Global Solutions</h3>
+		          	<div class="panel_text">
+		            	<p>Know no boundires. Expand your horizons.</p>	             
+		            </div>  
+		            <?php } else { print render($page['panel_2']); }?> 
+		          </div>
 		        </div>
-		      </div>
         
 	          <div class="span3">
-		        <div class="panel_wrap">
-		          <a href="#"><div class="panel_icon"><img src="<?php echo $root;?>/images/file3.png" alt="color"></div></a>
-		          <h3 class="panel_title">Customer Service</h3>
-		          <div class="panel_text">
-		            <p>Phone, email, live-chat. We've got you covered.</p>           
-		          </div>  
+		        	<div class="panel_wrap">
+		        	  <?php if(!$page['panel_3']) {?>
+		          	<a href="#"><div class="panel_icon"><img src="<?php echo $root;?>/images/file3.png" alt="color"></div></a>
+		          	<h3 class="panel_title">Customer Service</h3>
+		          	<div class="panel_text">
+		            	<p>Phone, email, live-chat. We've got you covered.</p>           
+		            </div> 
+		            <?php } else { print render($page['panel_3']); }?>  
+		          </div>
 		        </div>
-		      </div>
-            </div>
+		        
           </div>
-         <!-- end panels --> 
-       
+        </div>
+        <!-- end panels --> 
+        
+        <?php if($page['panel_full']) {?>
+        <div class="row">
+            <div id="panels"> 
+              <?php print render($page['panel_full']); ?>
+            </div>
+        </div>
+        <?php } ?>
+        
          <div class="row">
             <div class="span10">
               <div class="section_title"><span class="section_title_text">RECENT WORK</span></div>
