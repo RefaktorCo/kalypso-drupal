@@ -22,8 +22,9 @@
 	          </div>
         
 		        <?php if (theme_get_setting('page_layout') == 'sidebar_right'): ?>
-		        <div id="sidebar_wrap">
+		        
 		          <div class="span4">
+		            <div id="sidebar_wrap">
 		          	<?php if ($page['sidebar_first']): ?>
 		          	<aside id="sidebar-first" role="complementary" class="sidebar clearfix">
 		            <?php print render($page['sidebar_first']); ?>

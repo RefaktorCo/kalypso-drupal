@@ -18,11 +18,10 @@ $share_url = $base_url.'/node/'.$node->nid;
       <ul class="meta">
         <li><i class="icon-user"></i> by <?php print $name; ?></li>
         <li><i class="icon-calendar"></i> <?php print format_date($node->created, 'custom', 'M d, Y'); ?></li>
-        
         <li><i class="icon-comment"></i> <a href="<?php print $node_url;?>/#comments"><?php print $comment_count; ?> comments</a></li>
-        
+        <li><i class="icon-tags"></i></li>
      </ul>
-    <?php endif; ?>
+         <?php endif; ?>
     <div class="post_image"><?php print render($content['field_image']); ?></div>
   <?php endif; ?>
   
@@ -51,11 +50,12 @@ $share_url = $base_url.'/node/'.$node->nid;
 
   <div style="text-align: right"> 
   	<?php if($teaser): ?>
-  	<?php print l(t('Read more'), '../' . $node_url, array('attributes' => array('class' => t('newreadmore')))); ?> 
+  	<?php print l(t('read more'), '../' . $node_url, array('attributes' => array('class' => t('newreadmore')))); ?> 
     <?php endif;?>
   </div>
+  <hr>
 
-  <div class="clearfix"></div>
+
 
   <?php print render($content['comments']); ?>
 

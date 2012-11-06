@@ -10,14 +10,17 @@
       }
     ?>
   </div>
-  <div class="comment_content">  
-    By <?php print $author; ?> on <?php print $created; ?> (<?php print $permalink; ?>):
-    
+  <div class="comment_body">
+    <ul class="meta">  
+      <li><i class="icon-user"></i> by <?php print $author; ?></li>
+      <li><i class="icon-calendar"></i> <?php print format_date($node->created, 'custom', 'M d, Y'); ?></li>
+      <li><i class="icon-info-sign"></i> <?php print $permalink; ?></li>
+    </ul>
     <?php if ($new): ?>
       <span class="new"><?php print $new ?></span>
     <?php endif; ?>
     
-      <div class="content"<?php print $content_attributes; ?>>
+      <div class="comment_content"<?php print $content_attributes; ?>>
         <?php hide($content['links']); print render($content); ?>
         <?php if ($signature): ?>
          <div class="user-signature clearfix">
