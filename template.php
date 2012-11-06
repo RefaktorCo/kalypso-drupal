@@ -56,16 +56,16 @@ function kalypso_breadcrumb($variables, $page) {
   $breadcrumb = $variables['breadcrumb'];
 
   if (!empty($breadcrumb)) {
-    $crumbs = '<div id="breadcrumb"><ul class="breadcrumbs">';
+   
     foreach($breadcrumb as $value) {
       $count = $count - 1;
       $style = ' style="z-index:'.$count.';"';
       $pos = strpos( $value, ">"); 
       $temp1=substr($value,0,$pos);
       $temp2=substr($value,$pos,$pos);
-      $crumbs .= '<li>'.$value.'&#8592;</li>';
+      $crumbs .= $value.'&#8592; ';
     }
-    $crumbs .= '</ul></div>';
+  
   }
   return $crumbs;
 }
