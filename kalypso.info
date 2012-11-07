@@ -36,6 +36,11 @@ regions[panel_full]     = Panel Full Width
 
 regions[portfolio]      = Front Page Portfolio
 
+regions[contact_1]      = Contact 1
+regions[contact_2]      = Contact 2
+regions[contact_3]      = Contact 3
+regions[contact_full]   = Contact Full Width
+
 regions[footer_1]       = Footer Box 1
 regions[footer_2]       = Footer Box 2
 regions[footer_3]       = Footer Box 3
@@ -72,6 +77,12 @@ settings[youtube_url] = 'http://youtube.com'
 
 settings[enable_panels] = '1'
 settings[panels_title] = 'WHAT WE DO'
+
+settings[enable_portfolio] = '0'
+settings[portfolio_title] = 'RECENT WORK'
+
+settings[enable_contact] = '1'
+settings[contact_title] = 'GET IN TOUCH'
 
 settings[enable_highlight] = '1'
 settings[highlight_text] = 'This is <span class="standout_text">Kalypso</span> a modern Drupal theme.<br> Turn your website into something beautiful.'

@@ -28,12 +28,7 @@ jQuery(document).ready(function ($) {
 	$('#edit-menu .plus').toggleClass('minus');
   });
 	
-  $("#edit-contact .fieldset-wrapper").hide();
-  $("#edit-contact .fieldset-legend").click(function(){
-	$("#edit-contact .fieldset-wrapper").slideToggle("slow");
-	$(this).toggleClass("active");
-	$('#edit-contact .plus').toggleClass('minus');
-  });
+ 
 	
   $("#edit-social .fieldset-wrapper").hide();
   $("#edit-social .fieldset-legend").click(function(){
@@ -54,6 +49,20 @@ jQuery(document).ready(function ($) {
 	$("#edit-panels .fieldset-wrapper").slideToggle("slow");
 	$(this).toggleClass("active");
 	$('#edit-panels .plus').toggleClass('minus');
+  });
+  
+  $("#edit-portfolio .fieldset-wrapper").hide();
+  $("#edit-portfolio .fieldset-legend").click(function(){
+	$("#edit-portfolio .fieldset-wrapper").slideToggle("slow");
+	$(this).toggleClass("active");
+	$('#edit-portfolio .plus').toggleClass('minus');
+  });
+  
+  $("#edit-contact .fieldset-wrapper").hide();
+  $("#edit-contact .fieldset-legend").click(function(){
+	$("#edit-contact .fieldset-wrapper").slideToggle("slow");
+	$(this).toggleClass("active");
+	$('#edit-contact .plus').toggleClass('minus');
   });
   
   $("#edit-highlight .fieldset-wrapper").hide();

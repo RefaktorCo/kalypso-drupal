@@ -316,10 +316,38 @@ function kalypso_form_system_theme_settings_alter(&$form, &$form_state) {
       '#title' => 'Select your Front Page template',
       '#default_value' => theme_get_setting('front_page_template'),
       '#options' => array(
-        'kalypso' => 'kalypso Front Page (default)',
+        'kalypso' => 'Kalypso Front Page (default)',
         'drupal' => 'Standard Drupal Homepage',
       ),
     );
+    
+        // highlight
+    $form['options']['front_page']['highlight'] = array(
+      '#type' => 'fieldset', 
+      '#title' => '<div class="plus"></div><h3 class="options_heading">Highlight</h3>',
+      '#states' => array(
+        'visible' => array('#edit-front-page-template' => array('value' => 'kalypso')),
+      ),
+    );
+    
+      // Enable highlight 
+      $form['options']['front_page']['highlight']['enable_highlight'] = array(
+        '#type' => 'checkbox',
+        '#title' => 'Enable Highlight',
+        '#default_value' => theme_get_setting('enable_highlight'),
+      );
+      
+      // highlight Text
+      $form['options']['front_page']['highlight']['highlight_text'] = array(
+      	'#type' => 'textarea',
+      	'#title' => 'Highlight Text',
+      	'#default_value' => theme_get_setting('highlight_text'),
+      	'#states' => array (
+          'invisible' => array(
+            'input[name="enable_highlight"]' => array('checked' => FALSE)
+          )
+        )
+      );
   
     // Slider
     $form['options']['front_page']['slider'] = array(
@@ -427,33 +455,66 @@ function kalypso_form_system_theme_settings_alter(&$form, &$form_state) {
         '#default_value' => theme_get_setting('panels_title'),
       );
       
-    // highlight
-    $form['options']['front_page']['highlight'] = array(
-      '#type' => 'fieldset', 
-      '#title' => '<div class="plus"></div><h3 class="options_heading">Highlight</h3>',
+  // Panels
+    $form['options']['front_page']['portfolio'] = array(
+      '#type' => 'fieldset',
+      '#title' => '<div class="plus"></div><h3 class="options_heading">Portfolio</h3>',
       '#states' => array(
         'visible' => array('#edit-front-page-template' => array('value' => 'kalypso')),
       ),
     );
     
-      // Enable highlight 
-      $form['options']['front_page']['highlight']['enable_highlight'] = array(
+      // Enable Panels
+      $form['options']['front_page']['portfolio']['enable_portfolio'] = array(
         '#type' => 'checkbox',
-        '#title' => 'Enable Highlight',
-        '#default_value' => theme_get_setting('enable_highlight'),
+        '#title' => 'Enable Portfolio',
+        '#default_value' => theme_get_setting('enable_portfolio'),
       );
       
-      // highlight Text
-      $form['options']['front_page']['highlight']['highlight_text'] = array(
-      	'#type' => 'textarea',
-      	'#title' => 'Highlight Text',
-      	'#default_value' => theme_get_setting('highlight_text'),
-      	'#states' => array (
-          'invisible' => array(
-            'input[name="enable_highlight"]' => array('checked' => FALSE)
-          )
-        )
+      //Panel Title
+      $form['options']['front_page']['portfolio']['portfolio_title'] =array(
+        '#type' => 'textfield',
+        '#title' => 'Portfolio Title',
+        '#default_value' => theme_get_setting('portfolio_title'),
+      ); 
+      
+    // Contact
+    $form['options']['front_page']['contact'] = array(
+      '#type' => 'fieldset',
+      '#title' => '<div class="plus"></div><h3 class="options_heading">contact</h3>',
+      '#states' => array(
+        'visible' => array('#edit-front-page-template' => array('value' => 'kalypso')),
+      ),
+    );
+    
+      // Enable Contact
+      $form['options']['front_page']['contact']['enable_contact'] = array(
+        '#type' => 'checkbox',
+        '#title' => 'Enable Contact',
+        '#default_value' => theme_get_setting('enable_contact'),
       );
+      
+      //Contact Title
+      $form['options']['front_page']['contact']['contact_title'] =array(
+        '#type' => 'textfield',
+        '#title' => 'Contact Title',
+        '#default_value' => theme_get_setting('contact_title'),
+      ); 
+      
+      // Enable Map
+      $form['options']['front_page']['contact']['enable_map'] = array(
+        '#type' => 'checkbox',
+        '#title' => 'Enable Google Map',
+        '#default_value' => theme_get_setting('enable_map'),
+      );
+      
+      //Map Address
+      $form['options']['front_page']['contact']['map_address'] =array(
+        '#type' => 'textarea',
+        '#title' => 'Google Map Embed Code',
+        '#default_value' => theme_get_setting('map_address'),
+      ); 
+    
         
   // Layout
   $form['options']['layout'] = array(

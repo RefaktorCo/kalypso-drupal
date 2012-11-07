@@ -157,7 +157,8 @@ function kalypso_front_page($page){
           	} 
           	
           ?>
-   
+          
+          <?php if (theme_get_setting('enable_panels') == '1') { ?>
           <div class="row">
             <div class="span10">
               <div class="section_title"><span class="section_title_text"><?php echo theme_get_setting('panels_title'); ?></span></div>
@@ -213,11 +214,13 @@ function kalypso_front_page($page){
               <?php print render($page['panel_full']); ?>
             </div>
         </div>
-        <?php } ?>
+        <?php } } ?>
         
+
+         <?php if (theme_get_setting('enable_portfolio') == '1') { ?>
          <div class="row">
             <div class="span10">
-              <div class="section_title"><span class="section_title_text">RECENT WORK</span></div>
+              <div class="section_title"><span class="section_title_text"><?php echo theme_get_setting('portfolio_title'); ?></span></div>
             </div> 
           </div>   
          
@@ -227,20 +230,24 @@ function kalypso_front_page($page){
             </div>
           </div>
           <!-- end portfolio --> 
+          <?php } ?>
 
+          <?php if (theme_get_setting('enable_contact') == '1') { ?>
           <div class="row">
             <div class="span10">
-              <div class="section_title"><span class="section_title_text">GET IN TOUCH</span></div>
+              <div class="section_title"><span class="section_title_text"><?php echo theme_get_setting('contact_title'); ?></span></div>
             </div>
           </div>
-        
+          
+          <?php if (theme_get_setting('enable_map') == '1') { ?>
           <div class="row">
             <div class="span10">
               <div id="google_map">
-                <iframe width="1170" height="370" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=900+Bagby+St+Houston,+TX+77002&amp;sll=33.687,-117.774252&amp;sspn=0.324522,0.682526&amp;t=m&amp;ie=UTF8&amp;hq=&amp;hnear=900+Bagby+St,+Houston,+Harris,+Texas+77002&amp;ll=29.761779,-95.370008&amp;spn=0.003725,0.012864&amp;z=17&amp;iwloc=A&amp;output=embed"></iframe><br />      
+                <iframe width="1170" height="370" src="<?php echo theme_get_setting('map_address'); ?>"></iframe><br />      
               </div>
             </div>
           </div>
+          <?php } ?>
         
           <div class="row">   
             <div class="span4">
@@ -296,7 +303,8 @@ function kalypso_front_page($page){
                 </li>
               </ul>
             </div>
-          </div>      
+          </div>
+          <?php } ?>      
         
           <div class="row">
             <div class="span10">
