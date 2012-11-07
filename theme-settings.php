@@ -215,6 +215,11 @@ function kalypso_form_system_theme_settings_alter(&$form, &$form_state) {
           'nivo' => 'Nivo Slider',
           'bootstrap' => 'Twitter Bootstrap',
         ),
+        '#states' => array (
+          'invisible' => array(
+            'input[name="enable_slider"]' => array('checked' => FALSE)
+          )
+        )
       );
       
       // Enable Slider
@@ -234,6 +239,11 @@ function kalypso_form_system_theme_settings_alter(&$form, &$form_state) {
           '9' => '9',
           '10' => '10',
         ),
+        '#states' => array (
+          'invisible' => array(
+            'input[name="enable_slider"]' => array('checked' => FALSE)
+          )
+        )
       );
 
       $i = 1;
@@ -242,6 +252,11 @@ function kalypso_form_system_theme_settings_alter(&$form, &$form_state) {
         $form['options']['front_page']['slider']['slide_'.$i.''] = array(
           '#type' => 'fieldset',
           '#title' => '<h3 class="options_heading">Slide '.$i.'</h3>',
+          '#states' => array (
+          'invisible' => array(
+            'input[name="enable_slider"]' => array('checked' => FALSE)
+          )
+        )
         );
 
           $form['options']['front_page']['slider']['slide_'.$i.'']['slide_path_'.$i.''] = array(
@@ -293,6 +308,11 @@ function kalypso_form_system_theme_settings_alter(&$form, &$form_state) {
         '#type' => 'textfield',
         '#title' => 'Panels Title',
         '#default_value' => theme_get_setting('panels_title'),
+        '#states' => array (
+          'invisible' => array(
+            'input[name="enable_panels"]' => array('checked' => FALSE)
+          )
+        )
       );
       
   // Panels
@@ -316,6 +336,11 @@ function kalypso_form_system_theme_settings_alter(&$form, &$form_state) {
         '#type' => 'textfield',
         '#title' => 'Portfolio Title',
         '#default_value' => theme_get_setting('portfolio_title'),
+        '#states' => array (
+          'invisible' => array(
+            'input[name="enable_portfolio"]' => array('checked' => FALSE)
+          )
+        )
       ); 
       
     // Contact
@@ -339,6 +364,11 @@ function kalypso_form_system_theme_settings_alter(&$form, &$form_state) {
         '#type' => 'textfield',
         '#title' => 'Contact Title',
         '#default_value' => theme_get_setting('contact_title'),
+        '#states' => array (
+          'invisible' => array(
+            'input[name="enable_contact"]' => array('checked' => FALSE)
+          )
+        )
       ); 
       
       // Enable Map
@@ -346,6 +376,11 @@ function kalypso_form_system_theme_settings_alter(&$form, &$form_state) {
         '#type' => 'checkbox',
         '#title' => 'Enable Google Map',
         '#default_value' => theme_get_setting('enable_map'),
+        '#states' => array (
+          'invisible' => array(
+            'input[name="enable_contact"]' => array('checked' => FALSE)
+          )
+        )
       );
       
       //Map Address
@@ -353,6 +388,11 @@ function kalypso_form_system_theme_settings_alter(&$form, &$form_state) {
         '#type' => 'textarea',
         '#title' => 'Google Map Embed Code',
         '#default_value' => theme_get_setting('map_address'),
+        '#states' => array (
+          'invisible' => array(
+            'input[name="enable_map"]' => array('checked' => FALSE)
+          )
+        )
       ); 
   
   // Panels
@@ -376,6 +416,11 @@ function kalypso_form_system_theme_settings_alter(&$form, &$form_state) {
         '#type' => 'textfield',
         '#title' => 'Clients Title',
         '#default_value' => theme_get_setting('clients_title'),
+        '#states' => array (
+          'invisible' => array(
+            'input[name="enable_clients"]' => array('checked' => FALSE)
+          )
+        )
       );  
         
   // Layout
@@ -413,8 +458,13 @@ function kalypso_form_system_theme_settings_alter(&$form, &$form_state) {
         '#default_value' => theme_get_setting('color_scheme'),
         '#options' => array(
           'black' => 'Black',
-          'blue' => 'Blue',
+          'light-grey' => 'Light Grey',
+          'dark-grey' => 'Dark Grey',
+          'light-blue' => 'Light Blue (default)',
+          'dark-blue' => 'Dark Blue',
           'green' => 'Green',
+          'yellow' => 'Yellow',
+          'purple' => 'Purple',
           'orange' => 'Orange',
           'red' => 'Red',
         ),

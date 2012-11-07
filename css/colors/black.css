@@ -1,11 +1,11 @@
 /* Body and Content */
 a {
-  color: #000;
+  color: #000 !important;
 }
 
 a:hover {
-  color: #474747;
-  text-decoration: none;
+  color: #474747 !important;
+  text-decoration: none !important;
 }
 
 #main_title {
@@ -35,7 +35,7 @@ a.fNiv.active, #jMenu li a:hover {
 }
 
 /*Portfolio*/
-.view-first .mask {
+.portfolio-item-first .mask {
   background-color: rgba(0, 0, 0, 0.7);
 }
 

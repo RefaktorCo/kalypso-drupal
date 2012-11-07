@@ -6,7 +6,6 @@ engine = phptemplate
 stylesheets[all][] = bootstrap/css/bootstrap.css
 stylesheets[all][] = bootstrap/css/bootstrap-responsive.css
 stylesheets[all][] = style.css
-stylesheets[all][] = /css/colors/default.css
 stylesheets[all][] = /css/sliders/elastic-image.css
 stylesheets[all][] = /css/sliders/nivo.css
 stylesheets[all][] = css/ie.css
