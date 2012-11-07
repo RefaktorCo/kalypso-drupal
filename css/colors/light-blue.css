@@ -17,7 +17,14 @@ a:hover {
 }
 
 
-thead {background-color: #08C; color: white; }
+thead {
+  background-color: #08C; 
+  }
+
+.view-popular-tags a:hover {
+  background-color: #08c; 
+}
+
 
 /* Panel */
 .panel_icon {

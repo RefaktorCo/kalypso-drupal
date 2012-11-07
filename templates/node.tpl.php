@@ -25,7 +25,7 @@ $share_url = $base_url.'/node/'.$node->nid;
      <div class="tags"><i class="icon-tags"></i><?php print render($content['field_tags']); ?></div>
      <?php endif; ?>
          <?php endif; ?>
-    <div class="post_image"><?php print render($content['field_image']); ?></div>
+    <?php print render($content['field_image']); ?>
   <?php endif; ?>
   
   <div class="article_content"<?php print $content_attributes; ?>>
@@ -57,7 +57,7 @@ $share_url = $base_url.'/node/'.$node->nid;
 
   <div style="text-align: right"> 
   	<?php if($teaser): ?>
-  	<?php print l(t('read more'), '../' . $node_url, array('attributes' => array('class' => t('newreadmore')))); ?> 
+  	<a href="<?php print $node_url;?>">read more &raquo;</a>
     <?php endif;?>
   </div>
   <hr>

@@ -84,12 +84,12 @@ settings[page_layout] = 'sidebar_right'
 
 settings['font_family'] = 'Open Sans, serif'
 
-settings[h1] = '30px'
-settings[h2] = '24px'
-settings[h3] = '18px'
-settings[h4] = '14px'
-settings[h5] = '12px'
-settings[h6] = '11px'
+settings[h1] = '36px'
+settings[h2] = '30px'
+settings[h3] = '24px'
+settings[h4] = '18px'
+settings[h5] = '14px'
+settings[h6] = '12px'
 
 settings[enable_primary_footer] = '1'
 

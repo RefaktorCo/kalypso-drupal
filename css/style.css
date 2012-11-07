@@ -25,7 +25,7 @@ td.title, td.forum {width: 71%;}
   padding-top: 10%;	
 }
 
-.view_portfolio_image .field-label {
+.view_portfolio_image .field-label, .portfolio_tags .field-label {
 	display: none;
 }
 
@@ -79,14 +79,14 @@ td.title, td.forum {width: 71%;}
   text-decoration: none; 
   padding:7px 10px; 
   background-color: #08c; 
-  margin: 0px 8px 5px 0px;
+  margin: -5px 8px 12px 0px;
   display: inline-block; 
 }
 
 /*Node*/
 .title {padding-top: 4px;}
 .post_image img {border: 4px solid #d9d9d9;}
-.icon-calendar, .icon-user, .icon-comment, .icon-info-sign {margin-top: -1px;}
+.icon-calendar, .icon-user, .icon-comment, .icon-info-sign {margin-top: 1px;}
 .node_title_wrap {padding-left: 37px; padding-right: 0px;}
 .node_title {}
 .meta {margin: 0px 0px 5px 0px; float: left;}
