@@ -1,18 +1,25 @@
 /* Body and Content */
 a {
-  color: #cc000f !important;
+  color: #cc000f;
 }
 
 a:hover {
-  color: #ff0415 !important;
-  text-decoration: none !important;
+  color: #ff0415;
+  text-decoration: none;
 }
-
 #main_title {
   background: #cc000f; 
 }
 
 .standout_text {
+  background-color: #cc000f; 
+}
+
+thead {
+  background-color: #cc000f; 
+}
+
+.view-popular-tags a:hover {
   background-color: #cc000f; 
 }
 
@@ -22,16 +29,20 @@ a:hover {
 }
 
 /*Menu*/
-a.fNiv.active, #jMenu li a:hover {
-  color: #cc000f !important;
+.menu ul {
+  border-top: 2px solid #cc000f !important;
 }
 
-#jMenu li ul {
-  border-top: 2px solid #cc000f;
+#main-menu li a.active {
+	color: #cc000f;
 }
 
-#jMenu li ul li a:hover {
-  color: #cc000f;
+.menu ul ul {
+	border-top: 2px solid #cc000f;
+}
+
+#main-menu li a:hover, #main-menu .menu ul li a:hover  {
+	color: #cc000f;
 }
 
 /*Portfolio*/
