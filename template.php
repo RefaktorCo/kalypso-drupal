@@ -208,6 +208,13 @@ function kalypso_preprocess_html(&$vars){
     '#markup' => "<style type='text/css'>h1 {font-size:".theme_get_setting('h1').";} h2 {font-size:".theme_get_setting('h2').";} h3 {font-size:".theme_get_setting('h3').";} h4 {font-size:".theme_get_setting('h4').";} h5 {font-size:".theme_get_setting('h5').";} h6 {font-size:".theme_get_setting('h6').";}</style> ",
     '#weight' => 8,
   );
+  
+  $background = array(
+    '#type' => 'markup',
+    '#markup' => "<style type='text/css'>body {background-image:url(".$root."/images/backgrounds/".theme_get_setting('background_select').".png) !important;}</style> ",
+    '#weight' => 9,
+  );
+
     
   if (theme_get_setting('seo_title') != "") {
     drupal_add_html_head( $meta_title, 'meta_title' );
@@ -226,6 +233,7 @@ function kalypso_preprocess_html(&$vars){
   drupal_add_html_head( $viewport, 'meta_viewport' );
   drupal_add_html_head( $font_family, 'font_family');
   drupal_add_html_head( $headings, 'headings');
+  drupal_add_html_head( $background, 'background');
     
 }
 

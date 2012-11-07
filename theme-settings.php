@@ -449,7 +449,7 @@ function kalypso_form_system_theme_settings_alter(&$form, &$form_state) {
         'full_width' => 'Full Width',
       ),
     );
-
+   
   // Design
   $form['options']['design'] = array(
     '#type' => 'fieldset',
@@ -480,6 +480,25 @@ function kalypso_form_system_theme_settings_alter(&$form, &$form_state) {
           'red' => 'Red',
         ),
       );
+      
+    // Background
+    $form['options']['design']['background'] = array(
+      '#type' => 'fieldset',
+      '#title' => '<div class="plus"></div><h3 class="options_heading">Background</h3>',
+    );
+    
+      // Background
+    $form['options']['design']['background']['background_select'] = array(
+      '#type' => 'radios',
+      '#title' => 'Select a background color:',
+      '#default_value' => theme_get_setting('background_select'),
+      '#options' => array(
+        'gplaypattern' => 'item',
+        'cream_dust' => 'item',
+        'grey' => 'item',
+        'noisy_grid' => 'item',
+      ),
+    );  
       
     // CSS
     $form['options']['design']['css'] = array(
