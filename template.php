@@ -142,15 +142,46 @@ function kalypso_preprocess_html(&$vars){
   );
   $rale = array(
     '#tag' => 'link', 
+    '#weight' => 5,
     '#attributes' => array( 
       'href' => 'http://fonts.googleapis.com/css?family=Raleway', 
       'rel' => 'stylesheet',
       'type' => 'text/css',
     ),
   );
+  $bootstrap = array(
+    '#tag' => 'link', 
+    '#weight' => 6,
+    '#attributes' => array( 
+      'href' => ''.$root.'/bootstrap/css/bootstrap.css', 
+      'rel' => 'stylesheet',
+      'type' => 'text/css',
+      'media' => 'screen',
+    ),
+  );
+  $bootstrap_responsive = array(
+    '#tag' => 'link', 
+    '#weight' => 7,
+    '#attributes' => array( 
+      'href' => ''.$root.'/bootstrap/css/bootstrap-responsive.css', 
+      'rel' => 'stylesheet',
+      'type' => 'text/css',
+      'media' => 'screen',
+    ),
+  );
+  $style = array(
+    '#tag' => 'link', 
+    '#weight' => 8,
+    '#attributes' => array( 
+      'href' => ''.$root.'/css/style.css', 
+      'rel' => 'stylesheet',
+      'type' => 'text/css',
+      'media' => 'screen',
+    ),
+  );
   $color = array(
     '#tag' => 'link', 
-    '#weight' => 5,
+    '#weight' => 9,
     '#attributes' => array( 
       'href' => ''.$root.'/css/colors/'.theme_get_setting('color_scheme').'.css', 
       'rel' => 'stylesheet',
@@ -189,6 +220,9 @@ function kalypso_preprocess_html(&$vars){
   }
   drupal_add_html_head( $font, 'google_font_open_sans' );
   drupal_add_html_head( $rale, 'google_font_raleway' );
+  drupal_add_html_head( $bootstrap, 'bootstrap_style' );
+  drupal_add_html_head( $bootstrap_responsive, 'bootstrap_responsive_style' );
+  drupal_add_html_head( $style, 'main_style' );
   drupal_add_html_head( $color, 'color_style' );
   drupal_add_html_head( $viewport, 'meta_viewport' );
   drupal_add_html_head( $font_family, 'font_family');

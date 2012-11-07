@@ -1,11 +1,11 @@
 /* Body and Content */
 a {
-  color: #08C !important;
+  color: #08C ;
 }
 
 a:hover {
-  color: #00abff !important;
-  text-decoration: none !important;
+  color: #00abff;
+  text-decoration: none;
 }
 
 #main_title {

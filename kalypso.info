@@ -3,9 +3,6 @@ description = A Responsive Drupal Theme.
 core = 7.x
 engine = phptemplate
 
-stylesheets[all][] = bootstrap/css/bootstrap.css
-stylesheets[all][] = bootstrap/css/bootstrap-responsive.css
-stylesheets[all][] = style.css
 stylesheets[all][] = /css/sliders/elastic-image.css
 stylesheets[all][] = /css/sliders/nivo.css
 stylesheets[all][] = css/ie.css
@@ -81,7 +78,7 @@ settings[contact_title] = 'GET IN TOUCH'
 settings[enable_clients] = '1'
 settings[clients_title] = 'OUR CLIENTS'
 
-settings[color_scheme] = 'blue'
+settings[color_scheme] = 'light-blue'
 
 settings[page_layout] = 'sidebar_right'
 
