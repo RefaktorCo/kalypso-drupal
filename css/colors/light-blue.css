@@ -16,6 +16,9 @@ a:hover {
   background-color: #08C; 
 }
 
+
+thead {background-color: #08C; color: white; }
+
 /* Panel */
 .panel_icon {
   background: #08C; 	
@@ -32,6 +35,10 @@ a.fNiv.active, #jMenu li a:hover {
 
 #jMenu li ul li a:hover {
   color: #08C;
+}
+
+.menu ul {
+  border-top: 2px solid #08c !important;
 }
 
 /*Portfolio*/

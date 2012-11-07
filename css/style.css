@@ -1,3 +1,14 @@
+/*Forum*/
+#forum th {height: 35px;}
+thead a {color: #FFF !important;}
+table {margin-bottom: 15px;}
+tr.even {background-color: #EEE;}
+tr.odd {background-color: #DDD;}
+th {font-weight:400 !important;}
+thead a {color: white;}
+td.last-reply {width: 20%;}
+td.title, td.forum {width: 71%;}
+
 /*Portfolio view*/
 
 #portfolio_content_wrap {
@@ -159,7 +170,8 @@ input[type="text"] {
 
 hr {
   background: url('../images/hr.png') repeat-x 0 100%; 
-  height: 3px; 
+  height: 3px !important;
+  border: none !important;  
   margin: 20px 0px;
   border-top: none;
   border-bottom: none;
