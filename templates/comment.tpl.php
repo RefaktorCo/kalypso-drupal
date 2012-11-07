@@ -11,7 +11,7 @@
     ?>
   </div>
   <div class="comment_body">
-    <ul class="meta">  
+    <ul class="comment_meta">  
       <li><i class="icon-user"></i> by <?php print $author; ?></li>
       <li><i class="icon-calendar"></i> <?php print format_date($node->created, 'custom', 'M d, Y'); ?></li>
       <li><i class="icon-info-sign"></i> <?php print $permalink; ?></li>

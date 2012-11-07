@@ -25,6 +25,13 @@ thead {
   background-color: #08c; 
 }
 
+#main-menu li a.active {
+	color: #08c;
+}
+
+.menu ul ul {
+	border-top: 2px solid #08C;
+}
 
 /* Panel */
 .panel_icon {
