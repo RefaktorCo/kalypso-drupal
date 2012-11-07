@@ -1,9 +1,4 @@
-===Dynamik Changelog===
+===Kalypso Changelog===
 
-1.0.1 (10/26/12)
-  *Updated to Bootstrap 2.1.1.
-  *Minor style tweaks.
-  *Removed some unused resources.
-
-1.0 (10/01/12)
+1.0 (11/08/12)
   *Initial release.

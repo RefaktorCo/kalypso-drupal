@@ -1,4 +1,0 @@
-kalypso-drupal
-==============
-
-Kalypso Drupal 
