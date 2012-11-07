@@ -1,11 +1,11 @@
 /* Body and Content */
 a {
-  color: #08C !important;
+  color: #08C ;
 }
 
 a:hover {
-  color: #00abff !important;
-  text-decoration: none !important;
+  color: #00abff;
+  text-decoration: none;
 }
 
 #main_title {
@@ -16,22 +16,34 @@ a:hover {
   background-color: #08C; 
 }
 
+thead {
+  background-color: #08C; 
+}
+
+.view-popular-tags a:hover {
+  background-color: #08c; 
+}
+
 /* Panel */
 .panel_icon {
   background: #08C; 	
 }
 
 /*Menu*/
-a.fNiv.active, #jMenu li a:hover {
-  color: #08c !important;
+.menu ul {
+  border-top: 2px solid #08c !important;
 }
 
-#jMenu li ul {
-  border-top: 2px solid #08C;
+#main-menu li a.active {
+	color: #08c;
 }
 
-#jMenu li ul li a:hover {
-  color: #08C;
+.menu ul ul {
+	border-top: 2px solid #08C;
+}
+
+#main-menu li a:hover, #main-menu .menu ul li a:hover  {
+	color: #08c;
 }
 
 /*Portfolio*/

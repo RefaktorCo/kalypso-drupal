@@ -16,13 +16,22 @@ a:hover {
   background-color: #08C; 
 }
 
-
 thead {
   background-color: #08C; 
-  }
+}
 
 .view-popular-tags a:hover {
   background-color: #08c; 
+}
+
+/* Panel */
+.panel_icon {
+  background: #08C; 	
+}
+
+/*Menu*/
+.menu ul {
+  border-top: 2px solid #08c !important;
 }
 
 #main-menu li a.active {
@@ -33,26 +42,8 @@ thead {
 	border-top: 2px solid #08C;
 }
 
-/* Panel */
-.panel_icon {
-  background: #08C; 	
-}
-
-/*Menu*/
-a.fNiv.active, #jMenu li a:hover {
-  color: #08c !important;
-}
-
-#jMenu li ul {
-  border-top: 2px solid #08C;
-}
-
-#jMenu li ul li a:hover {
-  color: #08C;
-}
-
-.menu ul {
-  border-top: 2px solid #08c !important;
+#main-menu li a:hover, #main-menu .menu ul li a:hover  {
+	color: #08c;
 }
 
 /*Portfolio*/
