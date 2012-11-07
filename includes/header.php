@@ -41,8 +41,9 @@ function kalypso_header($page){
 				      </div> 
       
 				    </div> 
-            <!-- end menu -->       
-          </header> 
+            <!-- end menu -->   
+                
+            </header> 
           </div> 
         </div>
         <!-- end main span2 -->  

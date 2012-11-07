@@ -46,6 +46,7 @@ regions[footer_1]       = Footer Box 1
 regions[footer_2]       = Footer Box 2
 regions[footer_3]       = Footer Box 3
 regions[footer_4]       = Footer Box 4
+regions[footer_full]    = Footer Full Width
 
 settings[breadcrumbs] = '1'
 
