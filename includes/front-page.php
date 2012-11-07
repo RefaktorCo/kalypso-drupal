@@ -251,6 +251,7 @@ function kalypso_front_page($page){
         
           <div class="row">   
             <div class="span4">
+              <?php if(!$page['contact_1']) {?>
               <h3>Company Creed </h3>
 	          <ul class="accordion">
 	            <li class="divider"><h2 class="accordion-head title-color gdl-title"><span class="accordion-head-image active"></span>Sed ut perspiciatis unde</h2>
@@ -269,20 +270,24 @@ function kalypso_front_page($page){
 	              </div>
 	            </li>
 	          </ul>
+	          <?php } else { print render($page['contact_1']); }?> 
             </div> 
           
             <div class="span2">
+              <?php if(!$page['contact_2']) {?>
               <h3 class="our_details">Our Details</h3>
               <address>
               <strong>Lorem Ipsum, Inc.</strong><br>900 Bagby St<br>Houston, TX, 77002<br><abbr title="Phone">P:</abbr> (123) 456-7890
               </address>
               <p><a href="mailto:info@lorem.inc">info@lorem-inc.com</a><br /></p>
               <input type="text" class="subscribe_input" name="subject" value="Name" size="60" maxlength="64"><br>
-	          <input type="text" class="subscribe_input" name="subject" value="Email" size="60" maxlength="64"><br>
-	          <button class="btn btn-small" type="button">Subscribe</button>
+		          <input type="text" class="subscribe_input" name="subject" value="Email" size="60" maxlength="64"><br>
+		          <button class="btn btn-small" type="button">Subscribe</button>
+	          <?php } else { print render($page['contact_2']); }?> 
             </div>
        
             <div class="span4">
+            <?php if(!$page['contact_3']) {?>
 	          <h3>Customer Testimonials</h3> 
 	          <ul id="quotes">
                 <li>
@@ -302,17 +307,27 @@ function kalypso_front_page($page){
                  - Shirley Temple
                 </li>
               </ul>
+            <?php } else { print render($page['contact_3']); }?>  
             </div>
           </div>
-          <?php } ?>      
+          
+          <?php if($page['contact_full']) {?>
+          <div class="row">
+            <div id="panels"> 
+              <?php print render($page['contact_full']); ?>
+            </div>
+          </div>
+          <?php } } ?>     
         
+          <?php if (theme_get_setting('enable_clients') == '1') { ?>
           <div class="row">
             <div class="span10">
-              <div class="section_title"><span class="section_title_text">OUR CLIENTS</span></div>
+              <div class="section_title"><span class="section_title_text"><?php echo theme_get_setting('clients_title'); ?></span></div>
             </div>
            </div>
         
           <div id="clients" class="row" >
+            <?php if(!$page['clients']) {?>
             <div class="span2">
               <a href="#"><img src="<?php echo $root;?>/images/forest.png" alt="clients"></a>
             </div>  
@@ -328,7 +343,10 @@ function kalypso_front_page($page){
             <div class="span2">
               <a href="#"><img src="<?php echo $root;?>/images/jungle.png" alt="clients"></a>
             </div>
+            <?php } else { print render($page['clients']); }?> 
           </div>
+          
+          <?php } ?>
           
         </div>
       </div>       

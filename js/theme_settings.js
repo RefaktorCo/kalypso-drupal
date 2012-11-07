@@ -65,6 +65,13 @@ jQuery(document).ready(function ($) {
 	$('#edit-contact .plus').toggleClass('minus');
   });
   
+  $("#edit-clients .fieldset-wrapper").hide();
+  $("#edit-clients .fieldset-legend").click(function(){
+	$("#edit-clients .fieldset-wrapper").slideToggle("slow");
+	$(this).toggleClass("active");
+	$('#edit-clients .plus').toggleClass('minus');
+  });
+  
   $("#edit-highlight .fieldset-wrapper").hide();
   $("#edit-highlight .fieldset-legend").click(function(){
 	$("#edit-highlight .fieldset-wrapper").slideToggle("slow");

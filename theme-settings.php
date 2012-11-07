@@ -514,7 +514,29 @@ function kalypso_form_system_theme_settings_alter(&$form, &$form_state) {
         '#title' => 'Google Map Embed Code',
         '#default_value' => theme_get_setting('map_address'),
       ); 
+  
+  // Panels
+    $form['options']['front_page']['clients'] = array(
+      '#type' => 'fieldset',
+      '#title' => '<div class="plus"></div><h3 class="options_heading">Clients</h3>',
+      '#states' => array(
+        'visible' => array('#edit-front-page-template' => array('value' => 'kalypso')),
+      ),
+    );
     
+      // Enable clients
+      $form['options']['front_page']['clients']['enable_clients'] = array(
+        '#type' => 'checkbox',
+        '#title' => 'Enable Clients',
+        '#default_value' => theme_get_setting('enable_clients'),
+      );
+      
+      //Panel Title
+      $form['options']['front_page']['clients']['clients_title'] =array(
+        '#type' => 'textfield',
+        '#title' => 'Clients Title',
+        '#default_value' => theme_get_setting('clients_title'),
+      );  
         
   // Layout
   $form['options']['layout'] = array(

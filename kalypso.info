@@ -24,7 +24,6 @@ scripts[] = js/dynamik.js
 scripts[] = js/jquery.ui.totop.js
 scripts[] = js/easing.js
 
-regions[front_page]     = Front Page
 regions[content]        = Content
 regions[sidebar_first]  = First Sidebar
 regions[sidebar_second] = Second Sidebar
@@ -41,6 +40,8 @@ regions[contact_2]      = Contact 2
 regions[contact_3]      = Contact 3
 regions[contact_full]   = Contact Full Width
 
+regions[clients]   			= Clients
+
 regions[footer_1]       = Footer Box 1
 regions[footer_2]       = Footer Box 2
 regions[footer_3]       = Footer Box 3
@@ -49,14 +50,6 @@ regions[footer_4]       = Footer Box 4
 settings[breadcrumbs] = '1'
 
 settings[branding_type] = 'text'
-
-settings[enable_panel] = '1'
-settings[panel_text] = 'Enter your text here'
-
-settings[enable_menu] = '1'
-
-settings[enable_contact] = '1'
-settings[contact_text] = 'Call Us: 1-888-888-8888'
 
 settings[twitter_icon] = '1'
 settings[facebook_icon] = '1'
@@ -75,6 +68,16 @@ settings[linkedin_url] = 'http://linkedin.com'
 settings[flickr_url] = 'http://flickr.com'
 settings[youtube_url] = 'http://youtube.com'
 
+settings[enable_highlight] = '1'
+settings[highlight_text] = 'This is <span class="standout_text">Kalypso</span> a modern Drupal theme.<br> Turn your website into something beautiful.'
+
+settings[enable_slider] = '0'
+settings[slider_type] = 'default'
+settings[slides_number] = '3'
+settings[slide_caption_1] = 'This is slide caption 1'
+settings[slide_caption_2] = 'This is slide caption 2'
+settings[slide_caption_3] = 'This is slide caption 3'
+
 settings[enable_panels] = '1'
 settings[panels_title] = 'WHAT WE DO'
 
@@ -84,9 +87,8 @@ settings[portfolio_title] = 'RECENT WORK'
 settings[enable_contact] = '1'
 settings[contact_title] = 'GET IN TOUCH'
 
-settings[enable_highlight] = '1'
-settings[highlight_text] = 'This is <span class="standout_text">Kalypso</span> a modern Drupal theme.<br> Turn your website into something beautiful.'
-
+settings[enable_clients] = '1'
+settings[clients_title] = 'OUR CLIENTS'
 
 settings[color_scheme] = 'blue'
 
@@ -100,13 +102,6 @@ settings[h3] = '18px'
 settings[h4] = '14px'
 settings[h5] = '12px'
 settings[h6] = '11px'
-
-settings[enable_slider] = '0'
-settings[slider_type] = 'default'
-settings[slides_number] = '3'
-settings[slide_caption_1] = 'This is slide caption 1'
-settings[slide_caption_2] = 'This is slide caption 2'
-settings[slide_caption_3] = 'This is slide caption 3'
 
 settings[enable_primary_footer] = '1'
 settings[enable_secondary_footer] = '1'
