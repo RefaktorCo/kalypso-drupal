@@ -1283,7 +1283,7 @@ ul.menu {margin: 0;}
 .menu .sfHover ul li a {}
 /* active submenu link */
 .menu li.active-trail ul li a.active {color: #000;}
-.menu ul ul {z-index: 1001; margin: 0; left: 14.15em; top: 0px; border-top: 2px solid #08C;}
+.menu ul ul {z-index: 1001; margin: 0; left: 14.15em; top: -2px; border-top: 2px solid #08C;}
 			
 /*Responsive Styles*/
 
