@@ -1,3 +1,4 @@
+<?php kalypso_header($page);?>
         <div class="span10">
         
           <div class="row">
@@ -10,7 +11,7 @@
           </div> 
           
           <div class="row">
-            <div id ="main_content_wrap" class="<?php if (theme_get_setting('page_layout') == 'sidebar_right') { echo "span6"; } else { echo "span10"; } ?>">
+            <div id ="main_content_wrap" class="<?php if (theme_get_setting('blog_layout') == 'sidebar_right') { echo "span6"; } else { echo "span10"; } ?>">
               <div id="main_content">
 	              <?php print render($title_prefix); ?>
 	              <?php print render($title_suffix); ?>
@@ -19,7 +20,7 @@
 	            </div>
 	          </div>
         
-		        <?php if (theme_get_setting('page_layout') == 'sidebar_right'): ?>
+		        <?php if (theme_get_setting('blog_layout') == 'sidebar_right'): ?>
 		        
 		          <div class="span4">
 		            <div id="sidebar_wrap">
@@ -41,3 +42,4 @@
       </div>
     </div>  
   
+<?php kalypso_footer($page);?>

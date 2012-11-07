@@ -80,7 +80,8 @@ settings[clients_title] = 'OUR CLIENTS'
 
 settings[color_scheme] = 'light-blue'
 
-settings[page_layout] = 'sidebar_right'
+settings[page_layout] = 'full_width'
+settings[blog_layout] = 'sidebar_right'
 
 settings['font_family'] = 'Open Sans, serif'
 
