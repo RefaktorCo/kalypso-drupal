@@ -490,7 +490,7 @@ function kalypso_form_system_theme_settings_alter(&$form, &$form_state) {
       // Background
     $form['options']['design']['background']['background_select'] = array(
       '#type' => 'radios',
-      '#title' => 'Select a background color:',
+      '#title' => 'Select a background image:',
       '#default_value' => theme_get_setting('background_select'),
       '#options' => array(
         'gplaypattern' => 'item',

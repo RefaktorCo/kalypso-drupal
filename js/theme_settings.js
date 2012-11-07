@@ -28,8 +28,6 @@ jQuery(document).ready(function ($) {
 	$('#edit-menu .plus').toggleClass('minus');
   });
 	
- 
-	
   $("#edit-social .fieldset-wrapper").hide();
   $("#edit-social .fieldset-legend").click(function(){
 	$("#edit-social .fieldset-wrapper").slideToggle("slow");
@@ -84,6 +82,13 @@ jQuery(document).ready(function ($) {
 	$("#edit-colors .fieldset-wrapper").slideToggle("slow");
 	$(this).toggleClass("active");
 	$('#edit-colors .plus').toggleClass('minus');
+  });
+  
+  $("#edit-background .fieldset-wrapper").hide();
+  $("#edit-background .fieldset-legend").click(function(){
+	$("#edit-background .fieldset-wrapper").slideToggle("slow");
+	$(this).toggleClass("active");
+	$('#edit-background .plus').toggleClass('minus');
   });
   
   $("#edit-css .fieldset-wrapper").hide();
