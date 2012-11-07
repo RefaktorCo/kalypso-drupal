@@ -89,7 +89,7 @@ td.title, td.forum {width: 71%;}
 .icon-calendar, .icon-user, .icon-comment, .icon-info-sign {margin-top: -1px;}
 .node_title_wrap {padding-left: 37px; padding-right: 0px;}
 .node_title {}
-.meta {margin: 0px 0px 5px 0px;}
+.meta {margin: 0px 0px 5px 0px; float: left;}
 .meta li {list-style: none; display: inline; margin-right: 10px;}
 .field-type-taxonomy-term-reference .field-label, .field-type-taxonomy-term-reference .field-items, .field-type-taxonomy-term-reference .field-item {display:inline; float:left; font-weight:normal; padding-right:5px; margin-bottom: 10px;}
 .icon-tags {margin-right: 5px; margin-top: -1px; }
@@ -524,13 +524,18 @@ header{
   margin-bottom: 10px;
 }
 
+.tags {
+	font-size: 11px;
+	margin-top: -6px;
+}
+
 .icon-tags {
   margin-right: 4px;
 }
 
 .tags .icon-tags {
   margin-right: 4px;
-  margin-top: 2px;
+  margin-top: 0px;
   float: left;
 }
 

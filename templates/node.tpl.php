@@ -19,8 +19,11 @@ $share_url = $base_url.'/node/'.$node->nid;
         <li><i class="icon-user"></i> by <?php print $name; ?></li>
         <li><i class="icon-calendar"></i> <?php print format_date($node->created, 'custom', 'M d, Y'); ?></li>
         <li><i class="icon-comment"></i> <a href="<?php print $node_url;?>/#comments"><?php print $comment_count; ?> comments</a></li>
-        <li><i class="icon-tags"></i></li>
+        
      </ul>
+     <?php if ($field_tags):?>
+     <div class="tags"><i class="icon-tags"></i><?php print render($content['field_tags']); ?></div>
+     <?php endif; ?>
          <?php endif; ?>
     <div class="post_image"><?php print render($content['field_image']); ?></div>
   <?php endif; ?>
@@ -37,9 +40,9 @@ $share_url = $base_url.'/node/'.$node->nid;
     ?>
   </div>
   
-  <?php if ($field_tags):?>
-      <div class="tags"><i class="icon-tags"></i><?php print render($content['field_tags']); ?></div>
-    <?php endif; ?>
+  
+      
+
   
   <div class="post_share_wrap">
     <ul class="post_share">
