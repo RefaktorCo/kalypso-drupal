@@ -34,6 +34,8 @@ regions[panel_2]        = Panel 2
 regions[panel_3]        = Panel 3
 regions[panel_full]     = Panel Full Width
 
+regions[portfolio]      = Front Page Portfolio
+
 regions[footer_1]       = Footer Box 1
 regions[footer_2]       = Footer Box 2
 regions[footer_3]       = Footer Box 3

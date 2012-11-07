@@ -223,51 +223,7 @@ function kalypso_front_page($page){
          
           <div id="portfolio">
             <div class="row">
-
-              <div class="span4 ">
-                <h3 class="portfolio_cool_stuff">Cool stuff we've done</h3>
-               <p> Nulla in mauris turpis, sed venenatis odio. Duis porta orci at justo faucibus mattis. Nullam in lectus justo. Sed molestie libero ac turpis commodo non ullamcorper leo iaculis. <br><br> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus eget quam magna. Fusce pellentesque ullamcorper ipsum, egestas egestas nibh ultrices vehicula. Suspendisse potenti..</p><br />
-                <button class="btn btn-large" type="button">Our Portfolio</button> 
-              </div>              
-       
-              <div class="span5 portfolio-item portfolio-item-first">
-                <a href="portfolio-single.html"><img src="<?php echo $root;?>/images/portfolio_2.jpg" alt="portfolio2"></a>
-                <div class="mask">
-                  <h2>Eiusmod Tempor</h2>
-                  <p>research, consultation, human resources.</p>
-                  <a href="portfolio-single.html" class="info">Learn More</a>
-                </div>
-              </div>  
-            </div>
-        
-            <div class="row">
-
-              <div class="span3 portfolio-item portfolio-item-first">
-                <a href="portfolio-single.html"><img src="<?php echo $root;?>/images/portfolio_1.jpg" alt="portfolio1"></a>
-                <div class="mask">
-                  <h2>Lorem Ipsum</h2>
-                  <p>design, marketing, public relations.</p>
-                  <a href="portfolio-single.html" class="info">Learn More</a>
-                </div>
-              </div>  
-          
-              <div class="span3 portfolio-item portfolio-item-first">
-                <a href="portfolio-single.html"><img src="<?php echo $root;?>/images/portfolio_4.jpg" alt="portfolio2"></a>
-                <div class="mask">
-                  <h2>Eiusmod Tempor</h2>
-                  <p>research, consultation, human resources.</p>
-                  <a href="portfolio-single.html" class="info">Learn More</a>
-                </div>
-              </div>  
-          
-              <div class="span3 portfolio-item portfolio-item-first">
-                <a href="portfolio-single.html"><img src="<?php echo $root;?>/images/portfolio_3.jpg" alt="portfolio3"></a>
-                <div class="mask">
-                  <h2>Ullamco Laboris</h2>
-                  <p>design, social media.</p>
-                  <a href="portfolio-single.html" class="info">Learn More</a>
-                </div>
-              </div>  
+	            <?php print render($page['portfolio']); ?>  
             </div>
           </div>
           <!-- end portfolio --> 
