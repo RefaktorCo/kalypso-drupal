@@ -16,7 +16,7 @@
 <div id="wrapper">
 <h2>Overview</h2>
 <p>A responsive Drupal 7 theme powered by Twitter Bootstrap. Kalypso features a fully responsive design, easy to use theme options and follows Drupal coding standards. For theme support that cannot be found in this documentation, please contact me via the <a href="http://themeforest.net/user/refaktor" target="_blank">ThemeForest author page</a>.</p>
-<p>Updated: 10/02/12<br>Author: <a href="http://refaktor.co" target="_blank">Refaktor</a><br>Email: <a href="mailto:refaktor.co@gmail.com">refaktor.co@gmail.com</a><br>Docs powered by: <a href="https://github.com/jgallen23/toc" target="_blank">TOC</a></p>
+<p>Updated: 11/08/12<br>Author: <a href="http://refaktor.co" target="_blank">Refaktor</a><br>Email: <a href="mailto:refaktor.co@gmail.com">refaktor.co@gmail.com</a><br>Docs powered by: <a href="https://github.com/jgallen23/toc" target="_blank">TOC</a></p>
 <h2>Installation</h2>
 Option 1:
 <ul>
@@ -99,7 +99,12 @@ Kalypso's image slider allows you to upload an image, text caption (can include 
   &lt;/li&gt;
 &lt;/ul&gt;
 </pre>
-
+<h3>Clients</h3>
+<p>The final front page section is the Clients section. This contains a full width block region called Clients and can be used to display a list of clients as seen on the demo, but it can be used for whatever you like. If you do not wish to use this section, simply disable it in the theme settings.</p>
+<h2>Portfolio</h2>
+<p>This portion of the docs will explain how to set up the portfolio page seen on the theme demo. The only module you will need is the <a href="http://drupal.org/project/views" target="_blank">Views module</a> which is needed to create the list of portfolio items.</p>
+<p>The first step is to create a new content type called Portfolio Items. To create a new content type visit /admin/structure/types and click "add content type". Title the new content type "Portfolio Items" (this is important), enter a brief description and save.</p>
+<p> Next you have to add two custom fields to this content type for the portfolio image and description tags. Press the "manage fields" link under Portfolio Item in the content type overview page and use the "Add new field" option. Enter "Portfolio image" in the label field and select "Image" as the field type. Press save when you are done, and you will now have an image uploader when creating a Portfolio item.  Do the same thing again, only this time use "Portfolio description" as the label and "Text" as the field type. This field lets you add short description words like "design" and "branding" to your portfolio items which show up when you hover over the images on the portfolio page.</p>
 <h2>Footer</h2>
 <p>Kalypso's footer is split up into two parts so we will discuss each one separately. The main footer is split up into 4 block regions which can be used to display any information you want. There is also an optional social icons section in the area where the first block region is placed. If you would like to display the social icons, use the icons heading in the Footer options to select the ones you want to display and enter the necessary URLS. Or you can place a block into the Footer 1 block region to remove the icons and use your own content. </p>
 <p>The secondary footer has a full width block region that can be used, or you can use the text option in the theme settings. By default it displays a credit link but you can change this to whatever you like by either using the option or by using the Footer Full Width block region.</p>
