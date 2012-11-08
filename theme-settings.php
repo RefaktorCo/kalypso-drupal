@@ -150,24 +150,11 @@ function kalypso_form_system_theme_settings_alter(&$form, &$form_state) {
     '#title' => 'Front Page',
   );
   
-    // Front Page Template
-    $form['options']['front_page']['front_page_template'] = array(
-      '#type' => 'select',
-      '#title' => 'Select your Front Page template',
-      '#default_value' => theme_get_setting('front_page_template'),
-      '#options' => array(
-        'kalypso' => 'Kalypso Front Page (default)',
-        'drupal' => 'Standard Drupal Homepage',
-      ),
-    );
-    
-        // highlight
+    // highlight
     $form['options']['front_page']['highlight'] = array(
       '#type' => 'fieldset', 
       '#title' => '<div class="plus"></div><h3 class="options_heading">Highlight</h3>',
-      '#states' => array(
-        'visible' => array('#edit-front-page-template' => array('value' => 'kalypso')),
-      ),
+      
     );
     
       // Enable highlight 
@@ -193,9 +180,7 @@ function kalypso_form_system_theme_settings_alter(&$form, &$form_state) {
     $form['options']['front_page']['slider'] = array(
       '#type' => 'fieldset',
       '#title' => '<div class="plus"></div><h3 class="options_heading">Image Slider</h3>',
-      '#states' => array(
-        'visible' => array('#edit-front-page-template' => array('value' => 'kalypso')),
-      ),
+      
     );
     
       // Enable Slider
@@ -291,9 +276,7 @@ function kalypso_form_system_theme_settings_alter(&$form, &$form_state) {
     $form['options']['front_page']['panels'] = array(
       '#type' => 'fieldset',
       '#title' => '<div class="plus"></div><h3 class="options_heading">Panels</h3>',
-      '#states' => array(
-        'visible' => array('#edit-front-page-template' => array('value' => 'kalypso')),
-      ),
+      
     );
     
       // Enable Panels
@@ -319,9 +302,7 @@ function kalypso_form_system_theme_settings_alter(&$form, &$form_state) {
     $form['options']['front_page']['portfolio'] = array(
       '#type' => 'fieldset',
       '#title' => '<div class="plus"></div><h3 class="options_heading">Portfolio</h3>',
-      '#states' => array(
-        'visible' => array('#edit-front-page-template' => array('value' => 'kalypso')),
-      ),
+      
     );
     
       // Enable Panels
@@ -347,9 +328,7 @@ function kalypso_form_system_theme_settings_alter(&$form, &$form_state) {
     $form['options']['front_page']['contact'] = array(
       '#type' => 'fieldset',
       '#title' => '<div class="plus"></div><h3 class="options_heading">contact</h3>',
-      '#states' => array(
-        'visible' => array('#edit-front-page-template' => array('value' => 'kalypso')),
-      ),
+      
     );
     
       // Enable Contact
@@ -399,9 +378,7 @@ function kalypso_form_system_theme_settings_alter(&$form, &$form_state) {
     $form['options']['front_page']['clients'] = array(
       '#type' => 'fieldset',
       '#title' => '<div class="plus"></div><h3 class="options_heading">Clients</h3>',
-      '#states' => array(
-        'visible' => array('#edit-front-page-template' => array('value' => 'kalypso')),
-      ),
+      
     );
     
       // Enable clients
