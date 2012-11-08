@@ -8,10 +8,15 @@ include_once(drupal_get_path('theme', 'kalypso').'/includes/init.php');
 
 
 function kalypso_preprocess_page(&$vars, $hook) {
-    if (isset($vars['node'])) {
-        $suggest = "page__node__{$vars['node']->type}";
-        $vars['theme_hook_suggestions'][] = $suggest;
-    }
+  if (isset($vars['node'])) {
+    $suggest = "page__node__{$vars['node']->type}";
+    $vars['theme_hook_suggestions'][] = $suggest;
+  }
+  
+  $status = drupal_get_http_header("status");  
+  if($status == "404 Not Found") {      
+    $vars['theme_hook_suggestions'][] = 'page__404';
+  }
 }
 
 /* Allow sub-menu items to be displayed */
