@@ -244,11 +244,11 @@ function kalypso_preprocess_html(&$vars){
 
 /* Separate from kalypso_preprocess_html so function can be called directly before </head> tag. */
 function kalypso_user_css() {
-  echo "<!-- User defined CSS --!>";
+  echo "<!-- User defined CSS -->";
   echo "<style type='text/css'>";
   echo theme_get_setting('user_css');
   echo "</style>";
-  echo "<!-- End user defined CSS --!>";	
+  echo "<!-- End user defined CSS -->";	
 }
 
 ?>
