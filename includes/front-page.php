@@ -145,15 +145,15 @@ function kalypso_front_page($page){
           <?php 
             
             if (theme_get_setting('enable_slider') == '1' && theme_get_setting('slider_type') == 'default' ) {
-          	  kalypso_elastic_image_slider(); 
+          	  kalypso_elastic_image_slider($page); 
           	} 
           	
           	if (theme_get_setting('enable_slider') == '1' && theme_get_setting('slider_type') == 'nivo' ) {
-          	  kalypso_nivo_slider(); 
+          	  kalypso_nivo_slider($page); 
           	} 
           	
           	elseif (theme_get_setting('enable_slider') == '1' && theme_get_setting('slider_type') == 'bootstrap' ) {
-          	  kalypso_bootstrap_slider(); 
+          	  kalypso_bootstrap_slider($page); 
           	} 
           	
           ?>

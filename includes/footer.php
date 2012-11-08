@@ -42,12 +42,7 @@ function kalypso_footer($page){
           <div class="span5">
             <?php if(!$page['footer_4']) {?>
             <ul id="footer_menu">
-              <li> <a href="index.html">Home</a></li>
-              <li> <a href="#">Sliders</a></li>
-              <li> <a href="#">Features</a></li>
-              <li> <a href="blog.html">Blog</a></li>
-              <li> <a href="portfolio.html">Portfolio</a></li>
-              <li> <a href="contact.html">Contact</a></li>
+              <li> <a href="<?php print base_path();?>">Home</a></li>
             </ul>  
           <?php } else { print render($page['footer_4']); }?>      
           </div>
