@@ -94,6 +94,7 @@ hr {
 
 #main_content {
   margin-bottom: 20px;	
+  min-height: 400px;
 }
 
 .author_page {
