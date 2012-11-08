@@ -310,7 +310,7 @@ td.title, td.forum {
 }
 
 .field-name-field-portfolio-tags .field-type-taxonomy-term-reference .field-label, .field-type-taxonomy-term-reference .field-items, .field-type-taxonomy-term-reference .field-item{
-	float:none !important;
+
 }
 
 
@@ -390,6 +390,7 @@ td.title, td.forum {
 .meta {
 	margin: 0px 0px 5px 0px; 
 	float: left;
+	clear: both;
 }
 
 .meta li {
@@ -400,7 +401,7 @@ td.title, td.forum {
 
 .field-type-taxonomy-term-reference .field-label, .field-type-taxonomy-term-reference .field-items, .field-type-taxonomy-term-reference .field-item {
 	display:inline; 
-	float:left; 
+
 	font-weight:normal; 
 	padding-right:5px; 
 	margin-bottom: 10px;
