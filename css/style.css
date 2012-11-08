@@ -564,7 +564,8 @@ article hr {
 
 .tags {
 	font-size: 11px;
-	margin-top: -6px;
+	margin-top: -2px;
+	float: left;
 }
 
 .icon-tags {
@@ -573,7 +574,7 @@ article hr {
 
 .tags .icon-tags {
   margin-right: 4px;
-  margin-top: 0px;
+  margin-top: 3px;
   float: left;
 }
 
