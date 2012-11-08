@@ -41,8 +41,7 @@ function kalypso_field($variables) {
  
   // Render the items.
  
- 
-  
+
   if ($variables['element']['#field_name'] == 'field_tags') {
     // For tags, concatenate into a single, comma-delimitated string.
     foreach ($variables['items'] as $delta => $item) {
