@@ -39,42 +39,74 @@ Option 2:
 <img src="images/menu-2.png">
 <h2>Theme Settings</h2>
 <p>Kalypso includes a powerful set of theme settings that allow you to configure many aspects of your site. They are organized in a series of tabbed menu items each with their own set of options. Simply click on the option heading to expand the full set of options. The Kalypso theme options can be accessed by visiting yourdomain.com/admin/appearance/settings/Kalypso. All options have default values set, but you should go through each one and adjust them to your liking.</p>
-<img src="images/settings-1.png">
+
 <h2>Header</h2>
-<img src="images/header.png">
-<p>The Kalypso header area allows you to convey a lot of important information to your site's visitors. You can upload your own custom logo, or simply display your site's title and description. You can add a contact phone number or email address, and display any of the following social icons and your social links: Facebook, Twitter, YouTube, Google +, LinkedIn, Vimeo, Pinterest and an RSS feed.
-	
-To customize your header, visit the theme settings at yourdomain.com/admin/appearance/settings/Kalypso and click on the Header tab. From there you can click on any of the options headings and configure each header area to your liking.
+
+<p>Kalypso is a bit different because it uses a vertical header instead of a horizontal one. The top of the header allows for an image logo or the site title to be displayed, and a vertical menu appears below. To set your branding type visit the header tab in the theme settings, and refer to the menu instructions above for setting up your menu.
 </p>
 <h2>Front Page</h2>
 <p>By default Kalypso uses a custom front page template that features several custom sections including the image slider. All of these sections are fully customizable and can also be disabled. You also have the option to use the standard Drupal homepage by selecting it from the "Select your Front Page template" option. </p>
+<h3>Highlight</h3>
+
+<p>The Highlight section allows you to advertise a specific page or aspect of your site. The settings for the Highlight section are in the Front Page tab of the theme settings. You can enter your own text and even include HTML.</p>
+
 <h3>Image Slider</h3>
-<img src="images/slider.png">
+
 <p>
-Kalypso's image slider allows you to upload an image, text caption (can include HTML) and a link for each slide. To enable the slider, visit the Front Page settings tab, click on the Image Slider heading, and check off the "enable image slider" checkbox. From there, select the number of slides you want to use, and a set of options for each slide will be available. Upload your image, apply your optional caption and/or URL, and save your settings. Your images should be 1170 by 390 for optimal display. </p>
+Kalypso's image slider allows you to upload an image, text caption (can include HTML) and a link for each slide. To enable the slider, visit the Front Page settings tab, click on the Image Slider heading, and check off the "enable image slider" checkbox. Next, chose from either the Elastic Image slider, Nivo slider or Twitter Bootstrap slider. From there, select the number of slides you want to use, and a set of options for each slide will be available. Upload your image, apply your optional caption and/or URL, and save your settings. Your images should be 1170 by 390 for optimal display. </p>
 <h3>Panels</h3>
-<p>The panels section is a block region with 4 unique "panels". You can add any type of block you would like to the panels, but if you would like to mimic the default Kalypso panels, you can use the following HTML layout inside your block (be sure to set the block to use the full HTML text format).</p>
+<p>The panels section is a block region with 3 unique "panels". You can add any type of block you would like to the panels, but if you would like to mimic the default Kalypso panels, you can use the following HTML layout inside your block (be sure to set the block to use the full HTML text format).</p>
 <pre>
-&lt;div class=&quot;panel_icon&quot;&gt;
-  &lt;img src=&quot;/drupal/sites/all/themes/Kalypso_premium/images/colors.png&quot;&gt;
-&lt;/div&gt;
-&lt;div class=&quot;panel_text&quot;&gt;
-  &lt;h3 class=&quot;panel_title&quot;&gt;Theme Options&lt;/h3&gt;
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor
+&lt;div class=&quot;panel_wrap&quot;&gt;
+  &lt;a href=&quot;#&quot;&gt;&lt;div class=&quot;panel_icon&quot;&gt;&lt;img src=&quot;images/monitor.png&quot; alt=&quot;color&quot;&gt;&lt;/div&gt;&lt;/a&gt;
+  &lt;h3 class=&quot;panel_title&quot;&gt;Design &amp; Branding&lt;/h3&gt;
+  &lt;div class=&quot;panel_text&quot;&gt;
+    &lt;p&gt;Engage your audience. Define your identity.&lt;/p&gt;
+  &lt;/div&gt;  
 &lt;/div&gt;
 </pre>
-<h3>Highlight</h3>
-<img src="images/highlight.png">
-<p>The Highlight section allows you to advertise a specific page or aspect of your site. The settings for the Highlight section are in the Front Page tab of the theme settings. You can enter your own title, text, button text and button URL.</p>
-<h3>Front Page Region</h3>
-<p>There is a block region called Front Page that can be used to display any block content you wish. If you want to display your recent blog posts as seen on our <a href="http://refaktor.co/Kalypso_demo/" target="_blank">demo</a>, you can use the <a href="http://drupal.org/project/views" target="_blank">Views module</a> to display your post recent posts. Kalypso uses a custom view template to achieve the view seen on our demo, so you have to call the view Front Page Blog to make sure the template is properly displayed. See the image below for how the view is set up on the demo.
+<h3>Portfolio</h3>
+<p>There is a block region called Portfolio that can be used to display your site's portfolio content (see the Portfolio documentation for more information). If you want to display your recent portfolio items as seen on our <a href="http://refaktor.co/kalypso_demo/" target="_blank">demo</a>, you can use the <a href="http://drupal.org/project/views" target="_blank">Views module</a> to display your post recent posts. Kalypso uses a custom view template to achieve the view seen on our demo, so you have to call the view <b>Portfolio Three</b> to make sure the template is properly displayed. See the image below for how the view is set up on the demo.
 </p>
-<img src="images/front-page-blog.png">
+<img src="images/portfolio-block.png">
+<h3>Contact</h3>
+<p>The next optional Front Page section is the contact section. This section includes a fully responsive Google Map and 3 block regions. To use the Google Map, enable it under the Contact heading in the Front Page theme settings and enter your Google Maps embed code. The three areas of content below the map are displayed by default until blocks are placed inside the Contact 1, Contact 2 and Contact 3 block regions. There is also an optional full-width block region that can be used as well.<p>
+<p> If you would like to mimic the accordion widget that is seen when a block region is not placed inside Contact 1, use the markup below:</p>
+<pre>
+&lt;ul class=&quot;accordion&quot;&gt;
+  &lt;li class=&quot;divider&quot;&gt;&lt;h2 class=&quot;accordion-head title-color gdl-title&quot;&gt;&lt;span class=&quot;accordion-head-image active&quot;&gt;&lt;/span&gt;Title&lt;/h2&gt;
+    &lt;div class=&quot;accordion-content&quot;&gt;
+      Accordion Text
+    &lt;/div&gt;
+  &lt;/li&gt;
+    &lt;li class=&quot;divider&quot;&gt;&lt;h2 class=&quot;accordion-head title-color gdl-title&quot;&gt;&lt;span class=&quot;accordion-head-image active&quot;&gt;&lt;/span&gt;Title&lt;/h2&gt;
+    &lt;div class=&quot;accordion-content&quot;&gt;
+      Accordion Text
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+<p>To mimic the rotating quotes seen in the third portion of the contact section, use the following markup:</p>
+<pre>
+&lt;ul id=&quot;quotes&quot;&gt;
+  &lt;li&gt;
+    &lt;p&gt;Quote text goes here&lt;/p&gt;
+    - John Doe
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Here's another quote&lt;/p&gt;
+    - John Doe
+  &lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
 <h2>Footer</h2>
-<p>There are two areas in the Kalypso footer: the main footer (a block region) and a secondary footer which can be used to display copyright information. There are 4 regions inside the main footer, and blocks can be added to them like any other region. You can also choose to not display the footer by disabling it in the Footer theme settings. To configure the secondary footer, also visit the Footer theme settings where you can disable the secondary footer, or enter your own information into the left and right portion of secondary footer (supports HTML).
+<p>Kalypso's footer is split up into two parts so we will discuss each one separately. The main footer is split up into 4 block regions which can be used to display any information you want. There is also an optional social icons section in the area where the first block region is placed. If you would like to display the social icons, use the icons heading in the Footer options to select the ones you want to display and enter the necessary URLS. Or you can place a block into the Footer 1 block region to remove the icons and use your own content. </p>
+<p>The secondary footer has a full width block region that can be used, or you can use the text option in the theme settings. By default it displays a credit link but you can change this to whatever you like by either using the option or by using the Footer Full Width block region.</p>
+<p>You can also hide either of the footer regions by using the theme settings.</p>
 <h2>Block Regions</h2>
-<img src="images/blocks.png">
-<p>Kalypso features 12 block regions where you can add your own custom content. Visit yourdomain.com/admin/structure/block to add your own content to the defined block regions. Press "Add Block" to create a new custom blog, or select an existing block from the Disabled list below the defined block regions.</p>
+<img src="images/kalypso-blocks.png">
+<p>Kalypso features 18 block regions where you can add your own custom content. Visit yourdomain.com/admin/structure/block to add your own content to the defined block regions. Press "Add Block" to create a new custom blog, or select an existing block from the Disabled list below the defined block regions.</p>
 <h2>Thank You</h2>
 <p>Thank you very much for purchasing the Kalypso responsive Drupal 7 theme. Once again if you have any issues or feedback please connect via the <a href="http://themeforest.net/user/refaktor" target="_blank">ThemeForest author page</a>. Enjoy using Kalypso!</p>
 </p>&copy 2012 Refaktor.

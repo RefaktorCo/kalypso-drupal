@@ -289,7 +289,7 @@ function kalypso_front_page($page){
             <div class="span4">
             <?php if(!$page['contact_3']) {?>
 	          <h3>Customer Testimonials</h3> 
-	          <ul id="quotes">
+	            <ul id="quotes">
                 <li>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                   - John Doe
