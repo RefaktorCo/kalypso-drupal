@@ -1286,10 +1286,7 @@ html.overlay-open #vert_nav  {
 	list-style: none; 
 }
 
-#main-menu li:hover {
-	background: whitesmoke; 
-	cursor: pointer;
-}
+
 
 #main-menu li a:hover, #main-menu .menu ul li a:hover  {
 	background: transparent;
@@ -1301,7 +1298,7 @@ html.overlay-open #vert_nav  {
 
 #main-menu .menu li {
 	position: relative; 
-	padding:15px 15px 15px 0px;
+
 }
 
 #main-menu li a {
@@ -1312,7 +1309,21 @@ html.overlay-open #vert_nav  {
 	font-size: 18px; 
 	text-transform: uppercase; 
 	font-weight: 400;
+	display: block;
 }
+
+#main-menu ul ul li a {
+  padding: 0px 15px;
+}
+
+#main-menu ul ul {
+	width: 170px;
+}
+
+#main-menu li a:hover {
+	background: whitesmoke !important; 
+}
+
 #main-menu .menu li.first {
 	margin-left: 0px; 
 	border-left: none;
@@ -1354,11 +1365,12 @@ ul.menu {
 .menu ul {
 	padding: 0; 
 	position: absolute; 
-	top: 0px; 
-	left: 147px; 
+	top: 2px; 
+	left: 145px; 
 	z-index: 1000; 
 	display: none; 
 	width: 170px;
+
 }
 
 .menu ul ul {
@@ -1366,8 +1378,7 @@ ul.menu {
 	margin: 0; 
 	left: 14.15em; 
 	top: -2px; 
-}
-			
+}			
 /*Responsive Styles*/
 
 @media screen and (max-width: 1199px) { 
