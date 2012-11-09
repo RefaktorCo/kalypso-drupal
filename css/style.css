@@ -266,14 +266,14 @@ td.last-reply {
 }
 
 td.title, td.forum {
-	width: 65%;
+	width: 71%;
 }
 
 td.topics, td.posts {
   width: 10%;	
 }
 
-.forum, .topics, .posts .last-reply{
+.forum, .topics, .posts, .last-reply, .replies{
   padding-left: 10px;	
 }
 
