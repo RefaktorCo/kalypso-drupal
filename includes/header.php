@@ -52,8 +52,10 @@ function kalypso_header($page){
   jQuery(document).ready(function ($) {
 	
 	  $().UItoTop({ easingType: 'easeOutQuart' });
-	
-	  $('ul.menu').superfish();
+	 
+      $('input[type="submit"]').addClass('btn');
+      
+   	  $('ul.menu').superfish();
 	
 	  $('ul#quotes').quote_rotator();
 	

@@ -13,7 +13,6 @@
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 <?php kalypso_user_css(); ?>
-<link rel="stylesheet" class="switch" type="text/css" href="<?php global $root; echo $root;?>/css/colors/default.css">
 </head>
 
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
