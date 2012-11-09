@@ -101,6 +101,57 @@ Kalypso's image slider allows you to upload an image, text caption (can include 
 </pre>
 <h3>Clients</h3>
 <p>The final front page section is the Clients section. This contains a full width block region called Clients and can be used to display a list of clients as seen on the demo, but it can be used for whatever you like. If you do not wish to use this section, simply disable it in the theme settings.</p>
+<h2>Widgets</h2>
+<p>Kalypso includes styling and code for several widgets such as the accordion, Twitter feed and quote rotator. See below for the necessary markup to use each kind of widget in a block or page</p>
+<h4>Twitter</h4>
+<pre>&lt;div class='tweet query'&gt;&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+                        
+    jQuery(document).ready(function ($) {
+      
+      $(&quot;.tweet&quot;).tweet({
+        username: &quot;envato&quot;,
+        avatar_size: 34,
+        count: 3,
+        loading_text: &quot;loading tweets...&quot;
+      });
+    
+    });
+    
+  &lt;/script&gt;</pre>
+<h4>Accordion</h4>
+<pre>&lt;ul class=&quot;accordion&quot;&gt;
+  &lt;li class=&quot;divider&quot;&gt;&lt;h2 class=&quot;accordion-head title-color gdl-title&quot;&gt;&lt;span class=&quot;accordion-head-image active&quot;&gt;&lt;/span&gt;Title&lt;/h2&gt;
+    &lt;div class=&quot;accordion-content&quot;&gt;
+      Accordion Text
+    &lt;/div&gt;
+  &lt;/li&gt;
+    &lt;li class=&quot;divider&quot;&gt;&lt;h2 class=&quot;accordion-head title-color gdl-title&quot;&gt;&lt;span class=&quot;accordion-head-image active&quot;&gt;&lt;/span&gt;Title&lt;/h2&gt;
+    &lt;div class=&quot;accordion-content&quot;&gt;
+      Accordion Text
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</pre>
+<h4>Ad Block</h4>
+<pre>&lt;div class=&quot;ad_block&quot;&gt;
+  &lt;a href=&quot;#&quot;&gt;125 by 125&lt;/a&gt;&lt;a href=&quot;#&quot;&gt;125 by 125&lt;/a&gt;&lt;a href=&quot;#&quot;&gt;125 by 125&lt;/a&gt;&lt;a href=&quot;#&quot;&gt;125 by 125&lt;/a&gt;
+&lt;/div&gt;</pre>
+<h4>Quote Rotator</h4>
+<pre>
+&lt;ul id=&quot;quotes&quot;&gt;
+  &lt;li&gt;
+    &lt;p&gt;Quote text goes here&lt;/p&gt;
+    - John Doe
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Here's another quote&lt;/p&gt;
+    - John Doe
+  &lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+
+<h4>Popular Tags</h4>
+Use the <a href="http://drupal.org/project/views" target="_blank">Views module</a> to create a block view titled "Popular Tags" that is an HTML list of the taxonomy term "Tags". You can set the number limit to whatever you like, just make sure to name it "Popular Tags" and to make it an HTML list.
 <h2>Portfolio</h2>
 <p>This portion of the docs will explain how to set up the portfolio page seen on the theme demo. The only module you will need is the <a href="http://drupal.org/project/views" target="_blank">Views module</a> which is needed to create the list of portfolio items.</p>
 <h3>Custom content type</h3>

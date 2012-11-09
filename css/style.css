@@ -638,6 +638,15 @@ article hr {
   text-align: center;
 }
 
+.the-icons {
+		margin-left: 0; 
+		list-style: none;
+}
+.the-icons li {
+  float: left; width: 25%; 
+  line-height: 25px;
+}
+
 /*Scroll to Top*/
 #toTop { 
   display:none; 
