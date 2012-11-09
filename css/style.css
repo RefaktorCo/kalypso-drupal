@@ -63,6 +63,13 @@ body {
   padding: 0px;
 }
 
+a {
+   -moz-transition: all 0.2s ease-in-out;
+   -webkit-transition: all 0.2s ease-in-out;
+   -o-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;	
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Raleway', sans-serif; 
   font-weight: 300; 
@@ -162,6 +169,10 @@ hr {
   margin-top: 20px;
   margin-bottom: 22px;
   margin-left: 0px;
+  -moz-transition: all 0.2s ease-in-out;
+   -webkit-transition: all 0.2s ease-in-out;
+   -o-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;	
 }
 
 #main_title:hover {
@@ -269,6 +280,12 @@ hr {
 /*Forum*/
 #forum th {
 	height: 35px;
+	border-bottom: none;
+}
+
+thead {
+  color: #FFF !important;
+  border-bottom: none;	
 }
 
 thead a {
@@ -288,7 +305,8 @@ tr.odd {
 }
 
 th {
-	font-weight:400 !important;
+  font-weight:400 !important;
+	border-bottom: none !important;
 }
 
 thead a {
@@ -297,10 +315,23 @@ thead a {
 
 td.last-reply {
 	width: 20%;
+	padding-right: 20px;
 }
 
 td.title, td.forum {
 	width: 71%;
+}
+
+td.topics, td.posts {
+  width: 10%;	
+}
+
+.forum, .topics, .posts, .last-reply, .replies{
+  padding-left: 10px;	
+}
+
+thead th {
+  padding-left: 6px;	
 }
 
 /*Portfolio view*/
@@ -454,6 +485,7 @@ article hr {
 	-moz-border-radius: 15px;
 	border-radius: 15px;
 	width: 150px;
+	float: left;
 }
 
 /* Header */
@@ -1089,6 +1121,10 @@ span.accordion-head-image {
   -webkit-border-radius: 30px; 
   border-radius: 30px;
   margin: auto;
+  -moz-transition: all 0.2s ease-in-out;
+   -webkit-transition: all 0.2s ease-in-out;
+   -o-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;	
 }
 
 .panel_wrap:hover .panel_icon{background: #333;}
@@ -1306,16 +1342,14 @@ html.overlay-open #vert_nav  {
 #menu_wrap {
 	padding-top: 30px; 
 	margin-left: 0px;
+	width: 160px;
 }
 
 #main-menu li {
 	list-style: none; 
 }
 
-#main-menu li:hover {
-	background: whitesmoke; 
-	cursor: pointer;
-}
+
 
 #main-menu li a:hover, #main-menu .menu ul li a:hover  {
 	background: transparent;
@@ -1327,7 +1361,7 @@ html.overlay-open #vert_nav  {
 
 #main-menu .menu li {
 	position: relative; 
-	padding:15px 15px 15px 0px;
+
 }
 
 #main-menu li a {
@@ -1338,7 +1372,21 @@ html.overlay-open #vert_nav  {
 	font-size: 18px; 
 	text-transform: uppercase; 
 	font-weight: 400;
+	display: block;
 }
+
+#main-menu ul ul li a {
+  padding: 0px 15px;
+}
+
+#main-menu ul ul {
+	width: 170px;
+}
+
+#main-menu li a:hover {
+	background: whitesmoke !important; 
+}
+
 #main-menu .menu li.first {
 	margin-left: 0px; 
 	border-left: none;
@@ -1362,16 +1410,7 @@ ul.menu li {
 }
 
 .sf-sub-indicator {
-	position:		absolute;
-	display:		block;
-	right:			.75em;
-	top:			1.05em; /* IE6 only */
-	width:			12px;
-	height:			12px;
-	text-indent: 	-999em;
-	overflow:		hidden;
-	z-index: 6000;
-	background:		url('../images/arrow-right.png') no-repeat; /* 8-bit indexed alpha png. IE6 gets solid image only */
+	
 }
 
 .menu ul {
@@ -1389,12 +1428,14 @@ ul.menu {
 .menu ul {
 	padding: 0; 
 	position: absolute; 
-	top: 0px; 
-	left: 147px; 
+	top: 2px; 
+	left: 145px; 
 	z-index: 1000; 
 	display: none; 
 	width: 170px;
+
 }
+
 
 .menu ul ul {
 	z-index: 1001; 

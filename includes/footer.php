@@ -43,6 +43,11 @@ function kalypso_footer($page){
             <?php if(!$page['footer_4']) {?>
             <ul id="footer_menu">
               <li> <a href="<?php print base_path();?>">Home</a></li>
+              <li> <a href="<?php print base_path();?>">Sliders</a></li>
+              <li> <a href="http://http://refaktor.co/kalypso-demo/blog">Blog</a></li>
+              <li> <a href="http://http://refaktor.co/kalypso-demo/features/elements">Features</a></li>
+              <li> <a href="http://http://refaktor.co/kalypso-demo/portfolio">Portfolio</a></li>
+              <li> <a href="http://http://refaktor.co/kalypso-demo/contact">Contact</a></li>
             </ul>  
           <?php } else { print render($page['footer_4']); }?>      
           </div>

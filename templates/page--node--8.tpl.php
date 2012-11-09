@@ -12,7 +12,34 @@
           </div> 
           <?php } ?>
  
-          <?php kalypso_bootstrap_slider($page); ?>         
+         <div class="row">
+            <div class="span10">
+              <div id="myCarousel" class="carousel slide">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item"><img src="<?php echo $root; ?>/images/slider_1.jpg" alt="slider"></div>
+              <div class="item"><img src="<?php echo $root; ?>/images/slider_2.jpg" alt="slider">
+              <div class="carousel-caption">
+                      <h4>This is a caption</h4>
+                      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    </div>
+              </div> 
+              <div class="item"><img src="<?php echo $root; ?>/images/slider_3.jpg" alt="slider"></div> 
+            </div>
+            <!-- Carousel nav -->
+            <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+            <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+          </div>
+            </div>
+          </div>
+          
+           <script type="text/javascript">
+						jQuery(document).ready(function ($) {
+						  $('.carousel').carousel({
+						    interval: 5000
+						  })
+						})
+				  </script>
                 
           <?php if (theme_get_setting('enable_panels') == '1') { ?>
           <div class="row">

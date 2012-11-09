@@ -14,7 +14,7 @@
       <?php print render($title_suffix); ?>
   
       <?php if ($display_submitted): ?>
-        <ul class="meta">
+        <ul class="meta" style="float: none !important;">
         
           <li><i class="icon-user"></i> by <?php print $name; ?></li>
           <li><i class="icon-calendar"></i> <?php print $date; ?></li>

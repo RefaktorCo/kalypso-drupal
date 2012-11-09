@@ -12,7 +12,27 @@
           </div> 
           <?php } ?>
  
-          <?php kalypso_nivo_slider($page); ?>         
+          <div class="row">
+            <div class="span10">
+              <div class="slider-wrapper theme-default">
+                <div id="slider" class="nivoSlider">
+                  <img src="<?php echo $root; ?>/images/slider_1.jpg" data-thumb="slider" alt="slider" />
+                  <img src="<?php echo $root; ?>/images/slider_2.jpg" data-thumb="slider" alt="slider" data-transition="slideInLeft" />
+                  <img src="<?php echo $root; ?>/images/slider_3.jpg" data-thumb="slider" alt="slider" title="#htmlcaption" />
+                </div>
+                <div id="htmlcaption" class="nivo-html-caption">
+                  <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>. 
+                </div>
+              </div>      
+            </div>
+          </div>
+          
+          <script type="text/javascript">
+	          jQuery(document).ready(function ($) {
+	          	$('#slider').nivoSlider();
+	          });
+	        </script>
+      
                 
           <?php if (theme_get_setting('enable_panels') == '1') { ?>
           <div class="row">
