@@ -227,6 +227,11 @@ hr {
 /*Forum*/
 #forum th {
 	height: 35px;
+	border-bottom: none;
+}
+
+thead {
+  color: #FFF;	
 }
 
 thead a {
@@ -255,10 +260,23 @@ thead a {
 
 td.last-reply {
 	width: 20%;
+	padding-right: 20px;
 }
 
 td.title, td.forum {
-	width: 71%;
+	width: 65%;
+}
+
+td.topics, td.posts {
+  width: 10%;	
+}
+
+.forum, .topics, .posts .last-reply{
+  padding-left: 10px;	
+}
+
+thead th {
+  padding-left: 6px;	
 }
 
 /*Portfolio view*/
