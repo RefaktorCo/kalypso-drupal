@@ -1336,16 +1336,7 @@ ul.menu li {
 }
 
 .sf-sub-indicator {
-	position:		absolute;
-	display:		block;
-	right:			.75em;
-	top:			1.05em; /* IE6 only */
-	width:			12px;
-	height:			12px;
-	text-indent: 	-999em;
-	overflow:		hidden;
-	z-index: 6000;
-	background:		url('../images/arrow-right.png') no-repeat; /* 8-bit indexed alpha png. IE6 gets solid image only */
+	
 }
 
 .menu ul {

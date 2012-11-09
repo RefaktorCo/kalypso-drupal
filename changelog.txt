@@ -3,6 +3,7 @@
 1.0.1 (11/09/12)
   *Added CSS3 fade effects on link hovers.
   *Fixed bug with color scheme option.
+  *Changed menu dropdown indicator arrow.
   *General tweaks and fixes.
 
 1.0 (11/08/12)
