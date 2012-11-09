@@ -36,13 +36,12 @@ function kalypso_field($variables) {
  
   // Render the label, if it's not hidden.
   if (!$variables['label_hidden']) {
-    $output .= '<div class="field-label"' . $variables['title_attributes'] . '>' . $variables['label'] . ':&nbsp;</div>';
+    
   }
  
   // Render the items.
-  $output .= '<div class="field-items"' . $variables['content_attributes'] . '>';
  
-  
+
   if ($variables['element']['#field_name'] == 'field_tags') {
     // For tags, concatenate into a single, comma-delimitated string.
     foreach ($variables['items'] as $delta => $item) {
@@ -66,11 +65,9 @@ function kalypso_field($variables) {
       $output .= '<div class="' . $classes . '"' . $variables['item_attributes'][$delta] . '>' . drupal_render($item) . '</div>';
     }
   }
-  $output .= '</div>';
- 
+  
   // Render the top-level DIV.
-  $output = '<div class="' . $variables['classes'] . '"' . $variables['attributes'] . '>' . $output . '</div>';
- 
+   
   return $output;
 }
 
@@ -239,6 +236,19 @@ function kalypso_preprocess_html(&$vars){
   drupal_add_html_head( $font_family, 'font_family');
   drupal_add_html_head( $headings, 'headings');
   drupal_add_html_head( $background, 'background');
+    
+}
+
+/* Separate from kalypso_preprocess_html so function can be called directly before </head> tag. */
+function kalypso_user_css() {
+  echo "<!-- User defined CSS -->";
+  echo "<style type='text/css'>";
+  echo theme_get_setting('user_css');
+  echo "</style>";
+  echo "<!-- End user defined CSS -->";	
+}
+
+?>ground, 'background');
     
 }
 
