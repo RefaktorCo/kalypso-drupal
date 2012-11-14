@@ -15,7 +15,6 @@
 .ie7 #highlight .span10 {width: 740px !important;}
 .ie7 .blog_front.span3 {padding:0px !important; width: 210px !important;}
 
-
 /*IE 8*/
 .ie8 .menu ul ul {z-index: 1001; margin: 0; left: 15.15em; top: 13px;}
 .ie8 .menu ul ul ul {position: static;}
@@ -25,8 +24,19 @@
 .ie8 #panels .span3 {width: 205px !important; }
 .ie8 .blog_front.span3 {padding:0px !important; width: 210px !important;}
 .ie8 .blog_front.span3 .field-items img {height: 120px !important;}
-
-
 .ie8 #footer .span3 {width: 200px !important;}
 .ie8 #button_wrap.span2 {width: 120px !important;}
 .ie8 #highlight .span10 {width: 740px !important;}
+.ie8 .container {width: 1170px;}
+.ie8 .span12 {width: 1170px;}
+.ie8 .span11 {width: 1070px;}
+.ie8 .span10 {width: 970px;}
+.ie8 .span9 {width: 870px;}
+.ie8 .span8 {width: 770px;}
+.ie8 .span7 {width: 670px;}
+.ie8 .span6 {width: 570px;}
+.ie8 .span5 {width: 470px;}
+.ie8 .span4 {width: 370px;}
+.ie8 .span3 {width: 270px;}
+.ie8 .span2 {width: 170px;}
+.ie8 .span1 {width: 70px;}

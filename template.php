@@ -194,7 +194,7 @@ function kalypso_preprocess_html(&$vars){
   $viewport = array(
     '#type' => 'html_tag',
     '#tag' => 'meta',
-    '#weight' => 6,
+    '#weight' => 10,
     '#attributes' => array(
       'name' => 'viewport',
       'content' =>  'width=device-width, initial-scale=1, maximum-scale=1',
@@ -203,18 +203,18 @@ function kalypso_preprocess_html(&$vars){
   $font_family = array(
     '#type' => 'markup',
     '#markup' => "<style type='text/css'>body {font-family:".theme_get_setting('font_family')." !important;}</style> ",
-    '#weight' => 7,
+    '#weight' => 11,
   );
   $headings = array(
     '#type' => 'markup',
     '#markup' => "<style type='text/css'>h1 {font-size:".theme_get_setting('h1').";} h2 {font-size:".theme_get_setting('h2').";} h3 {font-size:".theme_get_setting('h3').";} h4 {font-size:".theme_get_setting('h4').";} h5 {font-size:".theme_get_setting('h5').";} h6 {font-size:".theme_get_setting('h6').";}</style> ",
-    '#weight' => 8,
+    '#weight' => 12,
   );
   
   $background = array(
     '#type' => 'markup',
     '#markup' => "<style type='text/css'>body {background-image:url(".$root."/images/backgrounds/".theme_get_setting('background_select').".png);}</style> ",
-    '#weight' => 9,
+    '#weight' => 13,
   );
 
     
