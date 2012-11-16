@@ -498,6 +498,7 @@ article hr {
 /* Blog */
 .post_title {
   margin-bottom: -4px;
+  font-size: 24px;
 }
 
 .page_title {
@@ -572,6 +573,7 @@ article hr {
 .content p {
   line-height: 1.7; 
   font-size: 13px;
+  clear: both;
 }
 
 .post_share_wrap {

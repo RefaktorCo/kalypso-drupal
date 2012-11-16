@@ -158,6 +158,8 @@ function kalypso_front_page($page){
           	
           ?>
           
+          <?php print render($page['slider']); ?> 
+          
           <?php if (theme_get_setting('enable_panels') == '1') { ?>
           <div class="row">
             <div class="span10">
