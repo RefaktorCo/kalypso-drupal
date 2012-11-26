@@ -1,7 +1,7 @@
 ===Kalypso Changelog===
 
 1.0.3 (11/26/12)
-  *Some fixes for responsive design.
+  *Fixed some bugs with iPad portrait layout.
 
 1.0.2 (11/16/12)
 	*Updated to Bootstrap 2.2.1
