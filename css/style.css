@@ -1424,9 +1424,13 @@ ul.menu {
 
 }
 
+@media screen and (max-width: 1024px) { 
+  .mask {display: none;}
+}
+
 @media screen and (max-width: 980px) { 
   #vert_nav {
-	margin-left: -40px;  
+	margin-left: -15px;  
   }
   
   #panels {

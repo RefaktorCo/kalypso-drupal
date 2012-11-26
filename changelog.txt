@@ -1,5 +1,8 @@
 ===Kalypso Changelog===
 
+1.0.3 (11/26/12)
+  *Some fixes for responsive design.
+
 1.0.2 (11/16/12)
 	*Updated to Bootstrap 2.2.1
 	*Added admin links to page template.
