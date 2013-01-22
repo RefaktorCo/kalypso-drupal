@@ -1,5 +1,10 @@
 ===Kalypso Changelog===
 
+1.0.4 (01/24/13)
+  *Updated to Bootstrap 2.2.2
+  *Fixed unidentified index bug in several templates related to $field_tag variable.
+  *Fixed RSS validation bug caused by whitespace in template files.
+
 1.0.3 (11/26/12)
   *Fixed some bugs with iPad portrait layout.
 

@@ -1,8 +1,4 @@
-<?php 
-
-kalypso_header($page);
-
-?>
+<?php kalypso_header($page);?>
         <div class="span10">
         
           <div class="row">
@@ -23,14 +19,10 @@ kalypso_header($page);
 	              <?php print render($page['content']); ?>
 	            </div>
 	          </div>
-        		      </div>
+        	</div>
         </div>    
+        
       </div>
     </div>  
     
-  <?php 
-
-kalypso_footer($page);
-
-?>
-  
+<?php kalypso_footer($page);?>

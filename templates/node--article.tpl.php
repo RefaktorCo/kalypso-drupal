@@ -21,7 +21,7 @@ $share_url = $base_url.'/node/'.$node->nid;
         <li><i class="icon-comment"></i> <a href="<?php print $node_url;?>/#comments"><?php print $comment_count; ?> comments</a></li>
         
      </ul>
-     <?php if ($field_tags):?>
+     <?php if (render($content['field_tags'])): ?>
      <div class="tags"><i class="icon-tags"></i><?php print render($content['field_tags']); ?></div>
      <?php endif; ?>
          <?php endif; ?>
@@ -40,7 +40,6 @@ $share_url = $base_url.'/node/'.$node->nid;
     ?>
   </div>
   
-
   <div class="post_share_wrap">
     <ul class="post_share">
       <li><a href="http://twitter.com/home?status=<?php print $share_url; ?>"><img src="<?php echo $root;?>/images/blog/twitter.png" alt="twitter"></a></li>
@@ -58,8 +57,6 @@ $share_url = $base_url.'/node/'.$node->nid;
     <?php endif;?>
   </div>
   <hr>
-
-
 
   <?php print render($content['comments']); ?>
 

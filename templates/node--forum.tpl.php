@@ -4,7 +4,6 @@
 
   <?php if ($user_picture || $display_submitted || !$page): ?>
    
-  
       <?php print render($title_prefix); ?>
       <?php if (!$page): ?>
         
@@ -22,35 +21,24 @@
         </ul>
       <?php endif; ?>
 
-   
- 
-
-	
   <?php endif; ?>
- 
-    
 
- 
   <div class="content"<?php print $content_attributes; ?>>
     <?php
     
-  
       // Hide comments, tags, and links now so that we can render them later.
       hide($content['taxonomy_forums']);
       hide($content['comments']);
       hide($content['links']);
       hide($content['field_tags']);
-      
-      
+          
       print render($content);
     ?>
   </div>
-  
-
-  	  Forum category:<?php print render($content['taxonomy_forums']); ?>
  
-  	
-    <?php if ($field_tags):?>
+  	  Forum category:<?php print render($content['taxonomy_forums']); ?>
+ 	
+    <?php if (render($content['field_tags'])): ?>
       <div class="tags"><i class="icon-tags"></i><?php print render($content['field_tags']); ?></div>
     <?php endif; ?>
     
@@ -60,26 +48,10 @@
   <?php endif;?>
 
     </div>
-<div class="clearfix"></div>
-
+  <div class="clearfix"></div>
 
   <?php print render($content['comments']); ?>
 
 <?php if (!$page): ?>
   </article> <!-- /.node -->
 <?php endif; ?>
-
-<script type="text/javascript">
-        jQuery(document).ready(function ($) {
-
-            $('.field-items img').each(function() {
-                $(this).hover(
-                    function() {
-                        $(this).stop().animate({ opacity: 0.8 }, 300);
-                    },
-                   function() {
-                       $(this).stop().animate({ opacity: 1.0 }, 300);
-                   })
-                });
-        });
-    </script>

@@ -6,4 +6,3 @@ kalypso_front_page($page); // Call Front Page
 
 kalypso_footer($page); // Call Footer
 ?>
-

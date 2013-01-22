@@ -1,8 +1,4 @@
-<?php 
-
-kalypso_header($page);
-
-?>
+<?php kalypso_header($page);?>
         <div class="span10">
         
           <div class="row">
@@ -17,22 +13,19 @@ kalypso_header($page);
           <div class="row">
             <div id ="portfolio_content_wrap" class="span10">
               <div class="row">
-              <div id="portfolio_main_content">
-	              <?php print render($title_prefix); ?>
-	              <?php print render($title_suffix); ?>
-	              <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
-	              <?php print render($page['content']); ?>
+	              <div id="portfolio_main_content">
+		              <?php print render($title_prefix); ?>
+		              <?php print render($title_suffix); ?>
+		              <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
+		              <?php print render($page['content']); ?>
+		            </div>
 	            </div>
-	          </div>
-        		      </div>
+            </div>
           </div>
-        </div>    
+        
+        </div>   
+       
       </div>
     </div>  
     
-  <?php 
-
-kalypso_footer($page);
-
-?>
-  
+<?php kalypso_footer($page); ?>

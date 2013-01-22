@@ -2,7 +2,6 @@
 global $root, $base_url;
 ?>
 
-
   <div class="span5 portfolio-item portfolio-item-first">
     <div class="view_portfolio_image"><a href="<?php print $node_url; ?>"><?php print render($content['field_portfolio_image']); ?></a></div>
     <div class="mask">
@@ -11,4 +10,3 @@ global $root, $base_url;
       <a href="<?php print $node_url; ?>" class="info">Learn More</a>
     </div>
   </div>
-  
