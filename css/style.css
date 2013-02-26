@@ -697,6 +697,10 @@ ul.links.inline {
 	margin-top: 7px;
 }
 
+.comment_content p {
+	clear: none !important;
+}
+
 .indented {
 margin-left: 80px;
 }
