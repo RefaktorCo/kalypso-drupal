@@ -1282,6 +1282,7 @@ html.overlay-open #vert_nav  {
 #menu_wrap {
 	padding-top: 30px; 
 	margin-left: 0px;
+	width: 160px;
 }
 
 #main-menu li {
