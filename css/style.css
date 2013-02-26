@@ -1048,11 +1048,19 @@ span.accordion-head-image {
 }
 
 .panel_text { 
-  font-family: 'Raleway', sans-serif;
-  font-size: 16px;
+  font-family: 'Raleway', sans-serif !important;
+  font-size: 16px !important;
   color: #666;
   text-align: center;
   
+}
+
+.panel_text p { 
+  font-family: 'Raleway', sans-serif !important;
+  font-size: 16px !important;
+  color: #666;
+  text-align: center;
+  line-height: 1.2;
 }
 
 .panel_icon {
