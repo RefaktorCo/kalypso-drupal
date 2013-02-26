@@ -27,6 +27,7 @@ $share_url = $base_url.'/node/'.$node->nid;
 		      hide($content['links']);
 		      
 		      hide($content['field_portfolio_image']);
+		      hide($content['field_portfolio_description']);
 		      print render($content);
 		    ?>
 		  </div>
