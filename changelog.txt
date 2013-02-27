@@ -1,6 +1,6 @@
 ===Kalypso Changelog===
 
-1.1 (02/26/13)
+1.1 (02/27/13)
   *Added full Drupal install with sample data to download files, updated docs.
   *Updated to Bootstrap 2.3.
   *Added example sub-theme (Odysseus) and sub-theme documentation.
