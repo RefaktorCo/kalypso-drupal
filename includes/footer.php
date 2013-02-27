@@ -28,23 +28,15 @@ function kalypso_footer($page){
           </div> 
       
           <div class="span2">
-            <?php if(!$page['footer_2']) {?>
-            <span> <i class="icon-envelope icon-white"></i>&nbsp;&nbsp;info@lorem-inc.com</span>
-            <?php } else { print render($page['footer_2']); }?>  
+            <?php print render($page['footer_2']); ?>  
           </div>
           
           <div class="span2">
-            <?php if(!$page['footer_3']) {?>
-            <span> <i class="icon-briefcase icon-white"></i>&nbsp;&nbsp;1-888-888-8888</span>
-            <?php } else { print render($page['footer_3']); }?>  
+            <?php print render($page['footer_3']); ?>  
           </div>
           
           <div class="span5">
-            <?php if(!$page['footer_4']) {?>
-            <ul id="footer_menu">
-              <li> <a href="<?php print base_path();?>">Home</a></li>
-            </ul>  
-          <?php } else { print render($page['footer_4']); }?>      
+            <?php print render($page['footer_4']); ?>      
           </div>
           
         </div> 
