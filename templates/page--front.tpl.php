@@ -181,24 +181,8 @@
 	        </div>
 	       </div>
 	    
-	      <div id="clients" class="row" >
-	        <?php if(!$page['clients']) {?>
-	        <div class="span2">
-	          <a href="#"><img src="<?php echo $root;?>/images/forest.png" alt="clients"></a>
-	        </div>  
-	        <div class="span2">
-	          <a href="#"><img src="<?php echo $root;?>/images/den.png" alt="clients"></a>
-	        </div>
-	        <div class="span2">
-	          <a href="#"><img src="<?php echo $root;?>/images/forest.png" alt="clients"></a>
-	        </div>
-	        <div class="span2">
-	          <a href="#"><img src="<?php echo $root;?>/images/canyon.png" alt="clients"></a>
-	        </div>
-	        <div class="span2">
-	          <a href="#"><img src="<?php echo $root;?>/images/jungle.png" alt="clients"></a>
-	        </div>
-	        <?php } else { print render($page['clients']); }?> 
+	      <div id="clients" class="row" >       
+	        <?php print render($page['clients']); ?> 
 	      </div>
 	      
 	      <?php } ?>
